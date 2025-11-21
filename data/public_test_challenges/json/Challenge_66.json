@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_66",
+  "source_notebook": "data/public_test_challenges/Challenge_66.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_66_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nConsider fermion fields that are adjoint representations of a $U(N)$ gauge group. Suppose fields carry a $U(1)$ R-charge whose fugacity is $q$. A generating function of the Witten index, for example, could be $I_N(q)=1-q+q^2+...$, which means the index at charge 1 is -1 and the index at charge 2 is 1.\n\n# Main problem:\nCompute the generating function of the index of trace relations up to charge 15 in a free $U(2)$ gauge theory that contains only two adjoint fields: a charge 1 fermion $\\psi$, and its derivative field $\\partial\\psi$ with charge 2.",
+      "code_template": "import sympy as sp\n\nq = sp.symbols('q')\n\ndef answer(q):\n    r\"\"\"\n    Return the expression of the generating function in SymPy format.\n\n    Inputs\n    ----------\n    q: sympy.Symbol, Fugacity for the U(1) R-charge, $q$\n\n    Outputs\n    ----------\n    generating_func: sympy.Expr, the generating function of the index of trace relations to up charge 15 in a free $U(2)$ gauge theory\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    generating_func = ...   # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return generating_func",
+      "answer_code": "import sympy as sp\n\nq = sp.symbols('q')\n\ndef answer(q):\n    r\"\"\"\n    Return the expression of the generating function in SymPy format.\n\n    Inputs\n    ----------\n    q: sympy.Symbol, Fugacity for the U(1) R-charge, $q$\n\n    Outputs\n    ----------\n    generating_func: sympy.Expr, the generating function of the index of trace relations to up charge 15 in a free $U(2)$ gauge theory\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    generating_func = ...   # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return generating_func",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nConsider fermion fields that are adjoint representations of a $U(N)$ gauge group. Suppose fields carry a $U(1)$ R-charge whose fugacity is $q$. A generating function of the Witten index, for example, could be $I_N(q)=1-q+q^2+...$, which means the index at charge 1 is -1 and the index at charge 2 is 1.",
+        "notebook_path": "data/public_test_challenges/Challenge_66.ipynb"
+      }
+    }
+  ]
+}

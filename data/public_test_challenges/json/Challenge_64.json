@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_64",
+  "source_notebook": "data/public_test_challenges/Challenge_64.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_64_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nWe consider the two-dimensional Ising conformal field theory.\n\n# Main problem:\n\nCompute the 5-point correlation function $\\langle\\epsilon(x_1)\\epsilon(x_2)\\epsilon(x_3)\\sigma(x_4)\\sigma(x_5)\\rangle$ at\n\n(1) $x_1=1+i$, $x_2=2$, $x_3=3$, $x_4=4$, $x_5=5$.\n\n(2) $x_1=1$, $x_2=2$, $x_3=3$, $x_4=4$, $x_5=5$.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the values of the 5-point correlation function\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    corr_1, corr_2: float, the 5-point correlation function, $\\langle\\epsilon(x_1)\\epsilon(x_2)\\epsilon(x_3)\\sigma(x_4)\\sigma(x_5)\\rangle$ at\n        (1) $x_1=1+i$, $x_2=2$, $x_3=3$, $x_4=4$, $x_5=5$\n        (2) $x_1=1$, $x_2=2$, $x_3=3$, $x_4=4$, $x_5=5$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    corr_1 = ...\n    corr_2 = ...\n    # ---------------------------------------------------------------\n\n    return corr_1, corr_2",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the values of the 5-point correlation function\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    corr_1, corr_2: float, the 5-point correlation function, $\\langle\\epsilon(x_1)\\epsilon(x_2)\\epsilon(x_3)\\sigma(x_4)\\sigma(x_5)\\rangle$ at\n        (1) $x_1=1+i$, $x_2=2$, $x_3=3$, $x_4=4$, $x_5=5$\n        (2) $x_1=1$, $x_2=2$, $x_3=3$, $x_4=4$, $x_5=5$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    corr_1 = ...\n    corr_2 = ...\n    # ---------------------------------------------------------------\n\n    return corr_1, corr_2",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nWe consider the two-dimensional Ising conformal field theory.",
+        "notebook_path": "data/public_test_challenges/Challenge_64.ipynb"
+      }
+    }
+  ]
+}

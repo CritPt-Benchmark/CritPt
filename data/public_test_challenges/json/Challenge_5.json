@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_5",
+  "source_notebook": "data/public_test_challenges/Challenge_5.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_5_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nLet $\\alpha \\in [0, 1]$ be a real parameter. Define the function $f(n, \\alpha)$ for complex $n$ by\n\\begin{equation}\nf(n, \\alpha) = (1 + \\alpha)^{n - 1} \\, {}_2F_1\\left( \\frac{1 - n}{2}, 1 - \\frac{n}{2}; 2; \\left( \\frac{2\\sqrt{\\alpha}}{1 + \\alpha} \\right)^2 \\right),\n\\end{equation}\nwhere ${}_2F_1(a, b; c; z)$ denotes the Gaussian hypergeometric function.\n\n# Main problem:\n\nEvaluate the derivative\n\\begin{equation}\ng(\\alpha) = \\left. \\frac{\\partial}{\\partial n} f(n, \\alpha) \\right|_{n = 0}\n\\end{equation}\nfor $\\alpha \\in [0, 1]$.",
+      "code_template": "import sympy as sp\n\nalpha = sp.symbols('alpha', real=True)\n\ndef answer(alpha):\n    r\"\"\"\n    Return the expression of the derivative $g(\\alpha)$ in Sympy format\n\n    Inputs\n    ----------\n    alpha: sympy.Symbol, real parameter, $\\alpha \\in [0, 1]$\n\n    Outputs\n    ----------\n    g_alpha:  sympy.Expr, $g(\\alpha)$ for $\\alpha \\in [0, 1]$.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    g_alpha = ...\n    # ---------------------------------------------------------------\n\n    return g_alpha",
+      "answer_code": "import sympy as sp\n\nalpha = sp.symbols('alpha', real=True)\n\ndef answer(alpha):\n    r\"\"\"\n    Return the expression of the derivative $g(\\alpha)$ in Sympy format\n\n    Inputs\n    ----------\n    alpha: sympy.Symbol, real parameter, $\\alpha \\in [0, 1]$\n\n    Outputs\n    ----------\n    g_alpha:  sympy.Expr, $g(\\alpha)$ for $\\alpha \\in [0, 1]$.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    g_alpha = ...\n    # ---------------------------------------------------------------\n\n    return g_alpha",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nLet $\\alpha \\in [0, 1]$ be a real parameter. Define the function $f(n, \\alpha)$ for complex $n$ by\n\\begin{equation}\nf(n, \\alpha) = (1 + \\alpha)^{n - 1} \\, {}_2F_1\\left( \\frac{1 - n}{2}, 1 - \\frac{n}{2}; 2; \\left( \\frac{2\\sqrt{\\alpha}}{1 + \\alpha} \\right)^2 \\right),\n\\end{equation}\nwhere ${}_2F_1(a, b; c; z)$ denotes the Gaussian hypergeometric function.",
+        "notebook_path": "data/public_test_challenges/Challenge_5.ipynb"
+      }
+    }
+  ]
+}

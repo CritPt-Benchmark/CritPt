@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_44",
+  "source_notebook": "data/public_test_challenges/Challenge_44.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_44_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nConsider the Kitaev honeycomb model at the isotropic limit (assuming $J_x=J_y=J_z=1$) on a 3x2 Bravais lattice with periodic boundary conditions.\n\n# Main problem:\nHow many degenerate ground states are there? How many of them are in the flux-free sector? Compute the energy of the ground states with three decimal precision.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the total number of degenerate ground states, how many of those lie in the flux-free sector and the value of ground state energy.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    N_total : total number of degenerate ground states.\n    N_flux_free : number of degenerate ground states in the flux‐free sector.\n    E_ground : float, ground state energy.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    N_total = ...\n    N_flux_free = ...\n    E_ground = ...\n    # ---------------------------------------------------------------\n\n    return N_total, N_flux_free, E_ground\n",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the total number of degenerate ground states, how many of those lie in the flux-free sector and the value of ground state energy.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    N_total : total number of degenerate ground states.\n    N_flux_free : number of degenerate ground states in the flux‐free sector.\n    E_ground : float, ground state energy.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    N_total = ...\n    N_flux_free = ...\n    E_ground = ...\n    # ---------------------------------------------------------------\n\n    return N_total, N_flux_free, E_ground\n",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nConsider the Kitaev honeycomb model at the isotropic limit (assuming $J_x=J_y=J_z=1$) on a 3x2 Bravais lattice with periodic boundary conditions.",
+        "notebook_path": "data/public_test_challenges/Challenge_44.ipynb"
+      }
+    }
+  ]
+}

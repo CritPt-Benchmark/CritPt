@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_32",
+  "source_notebook": "data/public_test_challenges/Challenge_32.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_32_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nConsider natural convection in a porous medium modeled by Darcy's law (i.e., Rayleigh-Darcy convection) with horizontal periodic boundary conditions. The boundary condition on the top wall is free (constant pressure) and at constant temperature. The boundary condition on the bottom wall is impermeable and has constant heat flux.\n\n# Main problem:\n\nWhat is the critical Rayleigh number (allowing $\\pm 0.05$ error) and associated critical horizontal wavenumber (allowing $\\pm 0.02$ error), where, above this critical Rayleigh number, the conduction base state is linearly unstable? Moreover, consider eigenfunction of vertical velocity w(z) and temperature T(z) associated with this critical Rayleigh number and crical horizontal wavenumber, what is the value of w(z)/T(z) at z=0.67365, where the bottom wall is at z=0 and the top wall is at z=1?",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the value of the critical Rayleigh number and associated critical horizontal wavenumber\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    Ra_c: float, the critical Rayleigh number.\n    k_c: float, the associated critical horizontal wavenumber.\n    ratio_w2T: float, the value of w(z)/T(z) at z=0.67365.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    Ra_c = ...\n    k_c = ...\n    ratio_w2T = ...\n    # ---------------------------------------------------------------\n\n    return Ra_c, k_c, ratio_w2T",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the value of the critical Rayleigh number and associated critical horizontal wavenumber\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    Ra_c: float, the critical Rayleigh number.\n    k_c: float, the associated critical horizontal wavenumber.\n    ratio_w2T: float, the value of w(z)/T(z) at z=0.67365.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    Ra_c = ...\n    k_c = ...\n    ratio_w2T = ...\n    # ---------------------------------------------------------------\n\n    return Ra_c, k_c, ratio_w2T",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nConsider natural convection in a porous medium modeled by Darcy's law (i.e., Rayleigh-Darcy convection) with horizontal periodic boundary conditions. The boundary condition on the top wall is free (constant pressure) and at constant temperature. The boundary condition on the bottom wall is impermeable and has constant heat flux.",
+        "notebook_path": "data/public_test_challenges/Challenge_32.ipynb"
+      }
+    }
+  ]
+}

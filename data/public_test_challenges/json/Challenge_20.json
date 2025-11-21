@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_20",
+  "source_notebook": "data/public_test_challenges/Challenge_20.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_20_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nTwo identical dielectric ellipsoids are confined in two Gaussian optical tweezers that propagate along the $z$-axis, are separated by a distance $R$ along the $x$-axis, and are also linearly polarized along the $x$-axis. The trapping lasers have wave vector $k$, beam waist $w_0$ and power $P_0$. Each ellipsoid possesses a semi-major axis of length $a$, two equal semi-minor axes of length $b$, a relative permittivity $\\epsilon_r$, and a mass density $\\rho$. Assume that the long axes execute small torsional oscillations about the $x$-direction and that the second-quantized Hamiltonian governing this system is\n$$H = \\hbar {\\omega _t}\\left( {a_1^\\dagger {a_1} + a_2^\\dagger {a_2}} \\right) + \\hbar g\\left( {a_1^\\dagger {a_2} + {a_1}a_2^\\dagger } \\right).$$\n\n# Main problem:\n\nDerive $\\omega_t$ and $g$ with the given parameters.",
+      "code_template": "import numpy as np\nfrom scipy.constants import c\n\ndef answer(a, b, rho, k, epsilon_r, P_0, w_0, R):\n    r\"\"\"\n    Return the values of $\\omega_t$ and $g$.\n\n    Inputs\n    ----------\n    a, b: float, The semi-major and semi-minor axes of the ellipsoids, in nm.\n    rho: float, The mass density of the ellipsoids, in kg/m^3.\n    k: float, The wave vector of the laser, in 1/m.\n    epsilon_r: float, The relative permittivity of the ellipsoids, dimensionless.\n    P_0: float, The power of the laser, in mW.\n    w_0: float, The beam waist of the laser, in nm.\n    R: float, The distance between the ellipsoids, in nm.\n\n    Outputs\n    ----------\n    omega_t : float\n        The torsional frequency $\\omega_t$, in 1/s.\n    g       : float\n        The coupling rate $g$, in 1/s.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    omega_t = ...\n    g = ...\n    # ---------------------------------------------------------------\n\n    return omega_t, g",
+      "answer_code": "import numpy as np\nfrom scipy.constants import c\n\ndef answer(a, b, rho, k, epsilon_r, P_0, w_0, R):\n    r\"\"\"\n    Return the values of $\\omega_t$ and $g$.\n\n    Inputs\n    ----------\n    a, b: float, The semi-major and semi-minor axes of the ellipsoids, in nm.\n    rho: float, The mass density of the ellipsoids, in kg/m^3.\n    k: float, The wave vector of the laser, in 1/m.\n    epsilon_r: float, The relative permittivity of the ellipsoids, dimensionless.\n    P_0: float, The power of the laser, in mW.\n    w_0: float, The beam waist of the laser, in nm.\n    R: float, The distance between the ellipsoids, in nm.\n\n    Outputs\n    ----------\n    omega_t : float\n        The torsional frequency $\\omega_t$, in 1/s.\n    g       : float\n        The coupling rate $g$, in 1/s.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    omega_t = ...\n    g = ...\n    # ---------------------------------------------------------------\n\n    return omega_t, g",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nTwo identical dielectric ellipsoids are confined in two Gaussian optical tweezers that propagate along the $z$-axis, are separated by a distance $R$ along the $x$-axis, and are also linearly polarized along the $x$-axis. The trapping lasers have wave vector $k$, beam waist $w_0$ and power $P_0$. Each ellipsoid possesses a semi-major axis of length $a$, two equal semi-minor axes of length $b$, a relative permittivity $\\epsilon_r$, and a mass density $\\rho$. Assume that the long axes execute small torsional oscillations about the $x$-direction and that the second-quantized Hamiltonian governing this system is\n$$H = \\hbar {\\omega _t}\\left( {a_1^\\dagger {a_1} + a_2^\\dagger {a_2}} \\right) + \\hbar g\\left( {a_1^\\dagger {a_2} + {a_1}a_2^\\dagger } \\right).$$",
+        "notebook_path": "data/public_test_challenges/Challenge_20.ipynb"
+      }
+    }
+  ]
+}

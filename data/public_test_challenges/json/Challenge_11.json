@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_11",
+  "source_notebook": "data/public_test_challenges/Challenge_11.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_11_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nConsider a (1+1)-D Lagrangian that consists of a Majorana fermion $\\chi$ and boson $\\phi$ with compactification radius $\\sqrt{\\frac{K}{m}}$:\n\n$\\\\\nL=\\frac{i}{2}\\bar{\\chi}\\not\\!{\\partial}\\chi+\\frac{m}{2\\pi K}(\\partial_\\mu \\phi)^2+\\frac{\\Delta}{2}i\\bar{\\chi}\\chi\\cos(2m\\phi).\\\\\n$\n\nIn this problem, $x\\equiv [\\Delta]$, where $[\\Delta]$ is the scaling dimension of the coupling constant $\\Delta$\n\n# Main problem:\n\nFind the beta functions for coupling constants $\\Delta$ and $x$ at one-loop level, with the convention that a positive beta function means that the\nsystem flows to strong coupling in the IR.",
+      "code_template": "import sympy as sp\n\nDelta, x, K, m = sp.symbols('Delta x K m')\n\ndef answer(Delta, x, K, m):\n    r\"\"\"\n    Return the expressions of the beta functions in Sympy format.\n\n    Inputs\n    ----------\n    Delta: sympy.Symbol, coupling constant $\\Delta$\n    x: sympy.Symbol, scaling dimension of $\\Delta$, $x\\equiv [\\Delta]$\n    K: sympy.Symbol, parameter $K$\n    m: sympy.Symbol, parameter $m$\n\n    Outputs\n    ----------\n    beta_Delta: sympy.Expr, beta function for coupling constant $\\Delta$, $\\beta(\\Delta)$\n    beta_x: sympy.Expr, beta function for $x$, $\\beta(x)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    beta_Delta = ...  # a SymPy expression of inputs\n    beta_x = ...      # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return beta_Delta, beta_x",
+      "answer_code": "import sympy as sp\n\nDelta, x, K, m = sp.symbols('Delta x K m')\n\ndef answer(Delta, x, K, m):\n    r\"\"\"\n    Return the expressions of the beta functions in Sympy format.\n\n    Inputs\n    ----------\n    Delta: sympy.Symbol, coupling constant $\\Delta$\n    x: sympy.Symbol, scaling dimension of $\\Delta$, $x\\equiv [\\Delta]$\n    K: sympy.Symbol, parameter $K$\n    m: sympy.Symbol, parameter $m$\n\n    Outputs\n    ----------\n    beta_Delta: sympy.Expr, beta function for coupling constant $\\Delta$, $\\beta(\\Delta)$\n    beta_x: sympy.Expr, beta function for $x$, $\\beta(x)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    beta_Delta = ...  # a SymPy expression of inputs\n    beta_x = ...      # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return beta_Delta, beta_x",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nConsider a (1+1)-D Lagrangian that consists of a Majorana fermion $\\chi$ and boson $\\phi$ with compactification radius $\\sqrt{\\frac{K}{m}}$:\n\n$\\\\\nL=\\frac{i}{2}\\bar{\\chi}\\not\\!{\\partial}\\chi+\\frac{m}{2\\pi K}(\\partial_\\mu \\phi)^2+\\frac{\\Delta}{2}i\\bar{\\chi}\\chi\\cos(2m\\phi).\\\\\n$\n\nIn this problem, $x\\equiv [\\Delta]$, where $[\\Delta]$ is the scaling dimension of the coupling constant $\\Delta$",
+        "notebook_path": "data/public_test_challenges/Challenge_11.ipynb"
+      }
+    }
+  ]
+}

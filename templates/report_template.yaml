@@ -1,0 +1,63 @@
+IMPORTS:
+  REPORT_TEMPLATE: ./report_template.html.jinja
+  REPORT_TEMPLATE_CODEBLOCK: ./report_template_codeblock.html.jinja
+  REPORT_TEMPLATE_DETAILS: ./report_template_details.html.jinja
+  REPORT_TEMPLATE_MESSAGE: ./report_template_message.html.jinja
+  REPORT_TEMPLATE_PRIMITIVE: ./report_template_primitive.html.jinja
+  REPORT_TEMPLATE_REASONING: ./report_template_reasoning.html.jinja
+  REPORT_TEMPLATE_TOOL_CALL: ./report_template_toolcall.html.jinja
+  REPORT_TEMPLATE_RESULT: ./report_template_result.html.jinja
+  REPORT_TEMPLATE_CSS: ./report_template.css
+  REPORT_TEMPLATE_PYGMENT_CSS: ./report_template_pygment.css
+
+# root: REPORT_TEMPLATE
+# - title
+# - REPORT_TEMPLATE_CHAT
+# - REPORT_TEMPLATE_EVALUATION
+# - REPORT_TEMPLATE_EXTRA
+# - generated_at
+
+# REPORT_TEMPLATE_CODEBLOCK
+# - key
+# - key_space
+# - md(code_block)
+
+# REPORT_TEMPLATE_DETAILS
+# - label
+# - obj
+# items
+
+# REPORT_TEMPLATE_MESSAGE
+# role_class(role)
+# role_html
+# i
+# REPORT_TEMPLATE_REASONING
+# content_htmls
+# content_html
+
+# PRIMITIVE
+# label, t, val
+
+# REPORT_TEMPLATE_REASONING
+# md(reasoning)
+
+# REPORT_TEMPLATE_RESULT
+# return_code, eval_result, info
+
+REPORT_TEMPLATE_EVALUATION: >
+  <div class="output-code-container">
+  
+      {{target_block}}
+  
+      {{output_block}}
+  
+  </div>
+  
+  {{eval_block}}
+
+  {{stdout_block}}
+
+  {{stderr_block}}
+
+  {{REPORT_TEMPLATE_RESULT}}
+  

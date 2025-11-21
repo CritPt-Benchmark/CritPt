@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_16",
+  "source_notebook": "data/public_test_challenges/Challenge_16.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_16_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nConsider the following Hamiltonian in two dimensions on a square lattice:\n\\begin{equation}\n\\begin{aligned}\nH &= 2\\sum_{{\\bf k}\\sigma}(\\cos{k_x}-\\cos{k_y})(c^\\dagger_{1{\\bf k}\\sigma}c_{1{\\bf k}\\sigma}-c^\\dagger_{2{\\bf k}\\sigma}c_{2{\\bf k}\\sigma})\\\\&+\\sqrt{2}\\sum_{{\\bf k}\\sigma}[\\text{e}^{i\\pi/4}(1+\\text{e}^{i(k_y-k_x)})+\\text{e}^{-i\\pi/4}(\\text{e}^{-ik_x}+\\text{e}^{ik_y})]c^\\dagger_{1{\\bf k}\\sigma}c_{2{\\bf k}\\sigma}\\\\&+\\sqrt{2}\\sum_{{\\bf k}\\sigma}[\\text{e}^{-i\\pi/4}(1+\\text{e}^{-i(k_y-k_x)})+\\text{e}^{i\\pi/4}(\\text{e}^{ik_x}+\\text{e}^{-ik_y})]c^\\dagger_{2{\\bf k}\\sigma}c_{1{\\bf k}\\sigma}\n\\\\&-\\mu\\sum_{{\\bf k}\\sigma}(c^\\dagger_{1{\\bf k}\\sigma}c_{1{\\bf k}\\sigma}+c^\\dagger_{2{\\bf k}\\sigma}c_{2{\\bf k}\\sigma})\n\\\\&+U\\sum_{{\\bf k}}(c^\\dagger_{1{\\bf k}\\uparrow}c_{1{\\bf k}\\uparrow}c^\\dagger_{1{\\bf k}\\downarrow}c_{1{\\bf k}\\downarrow}+c^\\dagger_{2{\\bf k}\\uparrow}c_{2{\\bf k}\\uparrow}c^\\dagger_{2{\\bf k}\\downarrow}c_{2{\\bf k}\\downarrow}),\n\\end{aligned}\n\\end{equation}\nwhere $c^\\dagger$ is the creation operator; $c$ is the annihilation operator; labels 1,2 denote sublattices 1 and 2; $\\bf{k}$ is momentum;   $\\sigma=\\uparrow \\text{or} \\downarrow$ represents the spin; and $\\mu$ is the chemical potential with repulsive interaction $U>0$.\n\n# Main problem:\n\nCalculate the critical interaction strength $U_c$ that causes a phase transition at quarter-filling of the system. Please be as accurate as possible.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the value of the critical interaction strength $U_c$\n    that causes a phase transition at quarter-filling of the system\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    U_c: float, critical interaction strength\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    U_c = ...\n    # ---------------------------------------------------------------\n\n    return U_c",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the value of the critical interaction strength $U_c$\n    that causes a phase transition at quarter-filling of the system\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    U_c: float, critical interaction strength\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    U_c = ...\n    # ---------------------------------------------------------------\n\n    return U_c",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nConsider the following Hamiltonian in two dimensions on a square lattice:\n\\begin{equation}\n\\begin{aligned}\nH &= 2\\sum_{{\\bf k}\\sigma}(\\cos{k_x}-\\cos{k_y})(c^\\dagger_{1{\\bf k}\\sigma}c_{1{\\bf k}\\sigma}-c^\\dagger_{2{\\bf k}\\sigma}c_{2{\\bf k}\\sigma})\\\\&+\\sqrt{2}\\sum_{{\\bf k}\\sigma}[\\text{e}^{i\\pi/4}(1+\\text{e}^{i(k_y-k_x)})+\\text{e}^{-i\\pi/4}(\\text{e}^{-ik_x}+\\text{e}^{ik_y})]c^\\dagger_{1{\\bf k}\\sigma}c_{2{\\bf k}\\sigma}\\\\&+\\sqrt{2}\\sum_{{\\bf k}\\sigma}[\\text{e}^{-i\\pi/4}(1+\\text{e}^{-i(k_y-k_x)})+\\text{e}^{i\\pi/4}(\\text{e}^{ik_x}+\\text{e}^{-ik_y})]c^\\dagger_{2{\\bf k}\\sigma}c_{1{\\bf k}\\sigma}\n\\\\&-\\mu\\sum_{{\\bf k}\\sigma}(c^\\dagger_{1{\\bf k}\\sigma}c_{1{\\bf k}\\sigma}+c^\\dagger_{2{\\bf k}\\sigma}c_{2{\\bf k}\\sigma})\n\\\\&+U\\sum_{{\\bf k}}(c^\\dagger_{1{\\bf k}\\uparrow}c_{1{\\bf k}\\uparrow}c^\\dagger_{1{\\bf k}\\downarrow}c_{1{\\bf k}\\downarrow}+c^\\dagger_{2{\\bf k}\\uparrow}c_{2{\\bf k}\\uparrow}c^\\dagger_{2{\\bf k}\\downarrow}c_{2{\\bf k}\\downarrow}),\n\\end{aligned}\n\\end{equation}\nwhere $c^\\dagger$ is the creation operator; $c$ is the annihilation operator; labels 1,2 denote sublattices 1 and 2; $\\bf{k}$ is momentum;   $\\sigma=\\uparrow \\text{or} \\downarrow$ represents the spin; and $\\mu$ is the chemical potential with repulsive interaction $U>0$.",
+        "notebook_path": "data/public_test_challenges/Challenge_16.ipynb"
+      }
+    }
+  ]
+}

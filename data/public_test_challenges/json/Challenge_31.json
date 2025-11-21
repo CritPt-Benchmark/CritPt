@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_31",
+  "source_notebook": "data/public_test_challenges/Challenge_31.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_31_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nConsider flow between two parallel plates heated from below and cooled from above (i.e., Rayleigh-Benard convection) with Prandtl number $Pr=1$ and horizontally periodic boundary conditions. The boundary condition on the top wall is free-slip with fixed temperature, and the boundary condition on the bottom wall is no-slip with constant heat flux.\n\n\n# Main problem:\n What are the critical Rayleigh number (allowing $\\pm 0.5$ error) and associated critical horizontal wavenumber (allowing $\\pm 0.02$ error), where above this critical Rayleigh number, the conduction base state is linearly unstable?\n",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the value of critical Rayleigh number and associated critical horizontal wavenumber.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    Ra_c: float, critical Rayleigh number\n    kx: float, associated critical horizontal wavenumber\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    Ra_c = ...\n    kx = ...\n    # ---------------------------------------------------------------\n\n    return Ra_c, kx",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the value of critical Rayleigh number and associated critical horizontal wavenumber.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    Ra_c: float, critical Rayleigh number\n    kx: float, associated critical horizontal wavenumber\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    Ra_c = ...\n    kx = ...\n    # ---------------------------------------------------------------\n\n    return Ra_c, kx",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nConsider flow between two parallel plates heated from below and cooled from above (i.e., Rayleigh-Benard convection) with Prandtl number $Pr=1$ and horizontally periodic boundary conditions. The boundary condition on the top wall is free-slip with fixed temperature, and the boundary condition on the bottom wall is no-slip with constant heat flux.\n",
+        "notebook_path": "data/public_test_challenges/Challenge_31.ipynb"
+      }
+    }
+  ]
+}

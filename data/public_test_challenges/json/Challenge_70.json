@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_70",
+  "source_notebook": "data/public_test_challenges/Challenge_70.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_70_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nPut $4n$ qubits on a lattice of $n$ rows and $4$ columns. Let $N:=\\int_{U(2)}U^{\\otimes 4}(S\\otimes S)(U^\\dagger)^{\\otimes 4}dU$ act on the $4$-qubit space of each row, where $S=|00\\rangle\\langle00|+|11\\rangle\\langle11|$, and $|\\psi\\rangle$ is a pure state on the $n$-qubit space of each column.\n\n# Main problem:\nPlease compute $\\text{tr}(N^{\\otimes n}\\psi^{\\otimes 4})$ when $|\\psi\\rangle$ is the $n$-qubit GHZ state for $n=3$.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the value of $\\text{tr}(N^{\\otimes n}\\psi^{\\otimes 4})$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    trace: float, $\\text{tr}(N^{\\otimes n}\\psi^{\\otimes 4})$ when $|\\psi\\rangle$ is the $n$-qubit GHZ state for $n=3$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    trace = ...\n    # ---------------------------------------------------------------\n\n    return trace",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the value of $\\text{tr}(N^{\\otimes n}\\psi^{\\otimes 4})$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    trace: float, $\\text{tr}(N^{\\otimes n}\\psi^{\\otimes 4})$ when $|\\psi\\rangle$ is the $n$-qubit GHZ state for $n=3$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    trace = ...\n    # ---------------------------------------------------------------\n\n    return trace",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nPut $4n$ qubits on a lattice of $n$ rows and $4$ columns. Let $N:=\\int_{U(2)}U^{\\otimes 4}(S\\otimes S)(U^\\dagger)^{\\otimes 4}dU$ act on the $4$-qubit space of each row, where $S=|00\\rangle\\langle00|+|11\\rangle\\langle11|$, and $|\\psi\\rangle$ is a pure state on the $n$-qubit space of each column.",
+        "notebook_path": "data/public_test_challenges/Challenge_70.ipynb"
+      }
+    }
+  ]
+}

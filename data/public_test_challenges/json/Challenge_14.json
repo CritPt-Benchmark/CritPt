@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_14",
+  "source_notebook": "data/public_test_challenges/Challenge_14.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_14_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nConsider the following spin model on a torus\n\\begin{equation}\nZ^{(n)}_{\\text{RM},\\ \\alpha}\\left[J\\right]=\\sum_{\\left\\{\\eta_{ij}=\\pm 1\\right\\}}P[\\eta]\\sum_{\\left\\{ \\sigma^{(f)}=\\pm1\\right\\}|_{f=1, \\dots n-1} }e^{J\\sum_{f=1}^{n-1}\\sum_{\\langle i,\\ j\\rangle}\\eta_{ij}\\sigma^{(f)}_{i}\\sigma^{(f)}_{j}},\\ \\text{with}\\ P[\\eta]=\\prod_{\\langle i, j \\rangle}\\frac{e^{J\\eta_{ij}}}{2\\cosh J},\n\\end{equation}\nwhere $\\sigma^{(f)}_{i}=\\pm1$ are the $f$-flavor Ising spins on a square lattice with\n$N$ sites, f=1,2,…n, n denotes the number of flavor, $\\eta_{ij}$ is a bond variable associated with $ij$, and $J \\geq 0$ is a coupling constant. Here, $\\alpha=\\text{PP},\\ \\text{AP},\\ \\text{PA},\\ \\text{AA}$\nindicates, for each flavor, an independent choice of boundary conditions (periodic $\\text{P}$ or anti-periodic\n$\\text{A}$ along the non-contractable loop). For brevity, we drop the subscript $\\alpha$ when all flavors take periodic-periodic boundary conditions. $Z^{(n)}_{\\text{RM}}$ is defined as partition function when all flavors take the periodic-periodic boundary conditions. $y$ is the free energy from twisting boundary conditions, defined as\n\\begin{equation}\ny= -\\frac{2}{n-1}\\log_2(\\frac{\\sum_\\alpha Z^{(n)}_{\\text{RM}, \\alpha}}{2^{n-1}Z^{(n)}_{\\text{RM}}}).\n\\end{equation}\n\n# Main problem:\n\nCalculate the value $J$ for $n=3$ where $y=0$ in a $100\\times 100$-site lattice to three decimal places.\n",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the value of J.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    J: float, value of the coupling constant $J$, when n = 3 and y = 0 in a $100 \\times 100$-site lattice\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    J = ...\n    # ---------------------------------------------------------------\n\n    return J",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the value of J.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    J: float, value of the coupling constant $J$, when n = 3 and y = 0 in a $100 \\times 100$-site lattice\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    J = ...\n    # ---------------------------------------------------------------\n\n    return J",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nConsider the following spin model on a torus\n\\begin{equation}\nZ^{(n)}_{\\text{RM},\\ \\alpha}\\left[J\\right]=\\sum_{\\left\\{\\eta_{ij}=\\pm 1\\right\\}}P[\\eta]\\sum_{\\left\\{ \\sigma^{(f)}=\\pm1\\right\\}|_{f=1, \\dots n-1} }e^{J\\sum_{f=1}^{n-1}\\sum_{\\langle i,\\ j\\rangle}\\eta_{ij}\\sigma^{(f)}_{i}\\sigma^{(f)}_{j}},\\ \\text{with}\\ P[\\eta]=\\prod_{\\langle i, j \\rangle}\\frac{e^{J\\eta_{ij}}}{2\\cosh J},\n\\end{equation}\nwhere $\\sigma^{(f)}_{i}=\\pm1$ are the $f$-flavor Ising spins on a square lattice with\n$N$ sites, f=1,2,…n, n denotes the number of flavor, $\\eta_{ij}$ is a bond variable associated with $ij$, and $J \\geq 0$ is a coupling constant. Here, $\\alpha=\\text{PP},\\ \\text{AP},\\ \\text{PA},\\ \\text{AA}$\nindicates, for each flavor, an independent choice of boundary conditions (periodic $\\text{P}$ or anti-periodic\n$\\text{A}$ along the non-contractable loop). For brevity, we drop the subscript $\\alpha$ when all flavors take periodic-periodic boundary conditions. $Z^{(n)}_{\\text{RM}}$ is defined as partition function when all flavors take the periodic-periodic boundary conditions. $y$ is the free energy from twisting boundary conditions, defined as\n\\begin{equation}\ny= -\\frac{2}{n-1}\\log_2(\\frac{\\sum_\\alpha Z^{(n)}_{\\text{RM}, \\alpha}}{2^{n-1}Z^{(n)}_{\\text{RM}}}).\n\\end{equation}",
+        "notebook_path": "data/public_test_challenges/Challenge_14.ipynb"
+      }
+    }
+  ]
+}

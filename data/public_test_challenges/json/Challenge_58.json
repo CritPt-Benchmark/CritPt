@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_58",
+  "source_notebook": "data/public_test_challenges/Challenge_58.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_58_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nConsider a condensed matter system going through a magnetic phase transition. Above the transition, the space group of the system is \\#182, and the atoms we are interested in are located at the Wyckoff position c. Below the transition, the magnetic order is out-of-plane, and the neutron scattering shows two peaks (one at $q_1$ = (0, 1/2, 0) and the other at $q_2$ = (1/2, 1/2, 0)). The optical measurements show that the system has both birefringence and magneto-optic Kerr effect below the transition.\n\n# Main problem:\n\nPlease specify all possible magnetic space groups for the system below the magnetic phase transition. The answer should be provided using the BNS number.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the BNS number(s).\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    BNS_numbers: set[str], set of the BNS numbers of all possible magnetic space groups, where each BNS number should be a string\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    BNS_numbers = ...\n    # ---------------------------------------------------------------\n\n    return BNS_numbers",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the BNS number(s).\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    BNS_numbers: set[str], set of the BNS numbers of all possible magnetic space groups, where each BNS number should be a string\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    BNS_numbers = ...\n    # ---------------------------------------------------------------\n\n    return BNS_numbers",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nConsider a condensed matter system going through a magnetic phase transition. Above the transition, the space group of the system is \\#182, and the atoms we are interested in are located at the Wyckoff position c. Below the transition, the magnetic order is out-of-plane, and the neutron scattering shows two peaks (one at $q_1$ = (0, 1/2, 0) and the other at $q_2$ = (1/2, 1/2, 0)). The optical measurements show that the system has both birefringence and magneto-optic Kerr effect below the transition.",
+        "notebook_path": "data/public_test_challenges/Challenge_58.ipynb"
+      }
+    }
+  ]
+}

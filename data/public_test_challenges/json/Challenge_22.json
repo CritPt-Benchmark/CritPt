@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_22",
+  "source_notebook": "data/public_test_challenges/Challenge_22.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_22_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\n\nOptimize the Holevo information over cq states $\\chi=\\sum_x p_x|x\\rangle\\langle x|\\otimes\\rho_x$, where\n\\begin{equation}\n\\rho_x=\\left(\\begin{array}{ccc}\n\\gamma_x \\cos ^2 \\theta & 0 & 0 \\\\\n0 & \\left(1-\\gamma_x\\right) \\cos ^2 \\theta & \\sqrt{1-\\gamma_x} \\cos \\theta \\sin \\theta e^{i \\phi_x} \\\\\n0 & \\sqrt{1-\\gamma_x} \\cos \\theta \\sin \\theta e^{-i \\phi_x} & \\sin ^2 \\theta\n\\end{array}\\right),\n\\end{equation}\n$\\{p_x\\}$ is a probability distribution over $x$, and $\\gamma_x$ are all real numbers in $[0,1]$. Assume that $\\cos\\theta\\neq1$.\n\n\n# Main problem:\n\nWrite the maximal value in terms of an optimization $\\max_{x\\in[0,1]} f(x)$, where $f(x)$ depends only on $x$ and nothing else. Find the function form of $f(x)$ explicitly.\n",
+      "code_template": "import sympy as sp\n\nx = sp.symbols('x')\n\ndef answer(x):\n    r\"\"\"\n    Return the expression of $f(x)$ in Sympy format.\n\n    Inputs\n    ----------\n    x : sympy.Symbol, optimization variable $x\\in[0,1]$\n\n    Outputs\n    ----------\n    f : sympy.Expr, the explicit function form of $f(x)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    f = ...  # a SymPy expression of x\n    # ---------------------------------------------------------------\n\n    return f",
+      "answer_code": "import sympy as sp\n\nx = sp.symbols('x')\n\ndef answer(x):\n    r\"\"\"\n    Return the expression of $f(x)$ in Sympy format.\n\n    Inputs\n    ----------\n    x : sympy.Symbol, optimization variable $x\\in[0,1]$\n\n    Outputs\n    ----------\n    f : sympy.Expr, the explicit function form of $f(x)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    f = ...  # a SymPy expression of x\n    # ---------------------------------------------------------------\n\n    return f",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\n\nOptimize the Holevo information over cq states $\\chi=\\sum_x p_x|x\\rangle\\langle x|\\otimes\\rho_x$, where\n\\begin{equation}\n\\rho_x=\\left(\\begin{array}{ccc}\n\\gamma_x \\cos ^2 \\theta & 0 & 0 \\\\\n0 & \\left(1-\\gamma_x\\right) \\cos ^2 \\theta & \\sqrt{1-\\gamma_x} \\cos \\theta \\sin \\theta e^{i \\phi_x} \\\\\n0 & \\sqrt{1-\\gamma_x} \\cos \\theta \\sin \\theta e^{-i \\phi_x} & \\sin ^2 \\theta\n\\end{array}\\right),\n\\end{equation}\n$\\{p_x\\}$ is a probability distribution over $x$, and $\\gamma_x$ are all real numbers in $[0,1]$. Assume that $\\cos\\theta\\neq1$.\n",
+        "notebook_path": "data/public_test_challenges/Challenge_22.ipynb"
+      }
+    }
+  ]
+}

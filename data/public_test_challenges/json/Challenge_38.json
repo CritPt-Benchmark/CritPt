@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_38",
+  "source_notebook": "data/public_test_challenges/Challenge_38.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_38_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nThe Hamiltonian for the Hatsugai-Kohmoto (HK) model is\n$$\nH = \\sum_{k,\\sigma} (\\varepsilon_k-\\mu) n_{k \\sigma} + U \\sum_{k}n_{k \\uparrow} n_{k \\downarrow}.\n$$\nThe first term represents the non-interacting part, which corresponds to a non-interacting band $0<\\varepsilon_k<W$, and the second term represents the interaction.\nWe further add a perturbation term, which preserves momentum and respects fermion symmetries:\n$$\nH' = \\sum_{2,3,4}V(1,2,3,4) \\delta_{k_1+k_2,k_3+k_4}c^{\\dagger}_4 c^{\\dagger}_3 c_2 c_1,\n$$\nwhere the index $i \\equiv (k_i, \\sigma_i)$ and the scattering process can be understood as $1 \\rightarrow \\bar{2} + 3+4$ and $\\bar{2} + 3+4 \\rightarrow 1$.\nThe energy phase space integral of the scattering rate of the propagating modes of the HK model is given by\n\\begin{equation}\n    I(T)=\\langle n_2 (1-n_3)(1-n_4)+(1- n_2) n_3n_4 \\rangle_{\\epsilon_2,\\epsilon_3,\\epsilon_4}=\\int d\\epsilon_2 d\\epsilon_3 d\\epsilon_4 \\langle n_2 (1-n_3)(1-n_4)+(1- n_2) n_3n_4 \\rangle \\delta(\\epsilon_1+\\epsilon_2-\\epsilon_3-\\epsilon_4).\n\\end{equation}\n\n# Main problem:\n\nCompute the temperature dependence of the energy phase space integral in the limit $U\\gg W\\gg k_BT\\gg \\epsilon_1$, where the chemical potential $\\mu$ only crosses the lower Hubbard band, i.e., $0<\\mu<W$.",
+      "code_template": "import sympy as sp\n\nT, U = sp.symbols('T U')\n\ndef answer(T):\n    \"\"\"\n    Return the temperature dependence of the energy phase space integral in SymPy format.\n\n    Inputs\n    ----------\n    T: sympy.Symbol, temperature $T$\n    U: sympy.Symbol, on-site interaction strength $U$\n\n    Outputs\n    ----------\n    I: sympy.Expr, the energy phase space integral, $I(T)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    I = ... # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return I",
+      "answer_code": "import sympy as sp\n\nT, U = sp.symbols('T U')\n\ndef answer(T):\n    \"\"\"\n    Return the temperature dependence of the energy phase space integral in SymPy format.\n\n    Inputs\n    ----------\n    T: sympy.Symbol, temperature $T$\n    U: sympy.Symbol, on-site interaction strength $U$\n\n    Outputs\n    ----------\n    I: sympy.Expr, the energy phase space integral, $I(T)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    I = ... # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return I",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nThe Hamiltonian for the Hatsugai-Kohmoto (HK) model is\n$$\nH = \\sum_{k,\\sigma} (\\varepsilon_k-\\mu) n_{k \\sigma} + U \\sum_{k}n_{k \\uparrow} n_{k \\downarrow}.\n$$\nThe first term represents the non-interacting part, which corresponds to a non-interacting band $0<\\varepsilon_k<W$, and the second term represents the interaction.\nWe further add a perturbation term, which preserves momentum and respects fermion symmetries:\n$$\nH' = \\sum_{2,3,4}V(1,2,3,4) \\delta_{k_1+k_2,k_3+k_4}c^{\\dagger}_4 c^{\\dagger}_3 c_2 c_1,\n$$\nwhere the index $i \\equiv (k_i, \\sigma_i)$ and the scattering process can be understood as $1 \\rightarrow \\bar{2} + 3+4$ and $\\bar{2} + 3+4 \\rightarrow 1$.\nThe energy phase space integral of the scattering rate of the propagating modes of the HK model is given by\n\\begin{equation}\n    I(T)=\\langle n_2 (1-n_3)(1-n_4)+(1- n_2) n_3n_4 \\rangle_{\\epsilon_2,\\epsilon_3,\\epsilon_4}=\\int d\\epsilon_2 d\\epsilon_3 d\\epsilon_4 \\langle n_2 (1-n_3)(1-n_4)+(1- n_2) n_3n_4 \\rangle \\delta(\\epsilon_1+\\epsilon_2-\\epsilon_3-\\epsilon_4).\n\\end{equation}",
+        "notebook_path": "data/public_test_challenges/Challenge_38.ipynb"
+      }
+    }
+  ]
+}

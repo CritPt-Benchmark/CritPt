@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_46",
+  "source_notebook": "data/public_test_challenges/Challenge_46.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_46_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nThe PXP model is a one-dimensional spin chain with a Rydberg blockade constraint. We use $|1\\rangle$ to denote the excited state and $|0\\rangle$ for the ground state. The Rydberg blockade forbids adjacent $1$s. The system's Hamiltonian is given by\n\\begin{equation}\nH = \\sum_{i=1}^L P_{i-1}X_iP_{i+1},\n\\end{equation}\nwhere $X_i$ is the Pauli X operator acting on the $i$th spin, and $P_i$ is the projector $|0\\rangle\\langle 0|$ on site $i$, indicating that excitations are only possible when both neighboring sites are in the $|0\\rangle$ state.\n\nWe impose periodic boundary conditions, and the Hamiltonian exhibits both translation and reflection symmetries. As a result, we can block diagonalize the Hamiltonian into simultaneous eigenstates of the lattice translation operator $T$ and reflection operator $P$. We consider the subspace $\\mathcal{D}_0^+$, which has zero momentum and even reflection parity.\n\nThe scar eigenstates have exceptionally larger overlap with the $Z_2$ state $|101010\\cdots10\\rangle$ compared to the neighboring eigenstates.\n\n# Main problem:\n\nFor the eigenstates inside $\\mathcal{D}_0^+$, list the energies of the scar states and the base-10 logarithm of their overlap with the $Z_2$ state: $\\log_{10}|\\langle Z_2|\\psi\\rangle|^2$. All numerical results should be given to four decimal places. Set the system size to $L = 26$.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the energies of the scar states and the corresponding base-10 logarithms\n    of their squared overlaps with the $Z_2$ state.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    energies: list[float]\n        Energies of the scar states in ascending order (four-decimal precision).\n    log_overlaps: list[float]\n        $\\log_{10}|\\langle Z_2|\\psi\\rangle|^2$ for each scar state in the same order as `energies` (four-decimal precision).\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    energies = [...]\n    log_overlaps = [...]\n    # ---------------------------------------------------------------\n\n    return energies, log_overlaps",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the energies of the scar states and the corresponding base-10 logarithms\n    of their squared overlaps with the $Z_2$ state.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    energies: list[float]\n        Energies of the scar states in ascending order (four-decimal precision).\n    log_overlaps: list[float]\n        $\\log_{10}|\\langle Z_2|\\psi\\rangle|^2$ for each scar state in the same order as `energies` (four-decimal precision).\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    energies = [...]\n    log_overlaps = [...]\n    # ---------------------------------------------------------------\n\n    return energies, log_overlaps",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nThe PXP model is a one-dimensional spin chain with a Rydberg blockade constraint. We use $|1\\rangle$ to denote the excited state and $|0\\rangle$ for the ground state. The Rydberg blockade forbids adjacent $1$s. The system's Hamiltonian is given by\n\\begin{equation}\nH = \\sum_{i=1}^L P_{i-1}X_iP_{i+1},\n\\end{equation}\nwhere $X_i$ is the Pauli X operator acting on the $i$th spin, and $P_i$ is the projector $|0\\rangle\\langle 0|$ on site $i$, indicating that excitations are only possible when both neighboring sites are in the $|0\\rangle$ state.\n\nWe impose periodic boundary conditions, and the Hamiltonian exhibits both translation and reflection symmetries. As a result, we can block diagonalize the Hamiltonian into simultaneous eigenstates of the lattice translation operator $T$ and reflection operator $P$. We consider the subspace $\\mathcal{D}_0^+$, which has zero momentum and even reflection parity.\n\nThe scar eigenstates have exceptionally larger overlap with the $Z_2$ state $|101010\\cdots10\\rangle$ compared to the neighboring eigenstates.",
+        "notebook_path": "data/public_test_challenges/Challenge_46.ipynb"
+      }
+    }
+  ]
+}

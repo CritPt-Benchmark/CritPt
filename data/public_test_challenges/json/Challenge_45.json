@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_45",
+  "source_notebook": "data/public_test_challenges/Challenge_45.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_45_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nIn goniopolar materials, the thermal power can be n-type in one direction and p-type in another direction.\n\n# Main problem:\nConsider a two-band 2D intrinsic semiconductor under temperature $T$. The conduction band has a dispersion $E_c= \\Delta/2+\\sum_{\\alpha=x,y}\\frac{\\hbar^2k_{\\alpha}^2}{2m_{c,\\alpha}}$, and the valence band has a dispersion $E_v= -\\Delta/2-\\sum_{\\alpha=x,y}\\frac{\\hbar^2k_{\\alpha}^2}{2m_{v,\\alpha}}$, where $\\Delta$ is the size of band gap. We further assume that the relaxation time of the electrons and holes are the same. What condition should the effective mass $m_{c/v,\\alpha}$, with $ \\alpha=x,y$, satisfy to exhibit goniopolarity?\n\n",
+      "code_template": "def answer(mc_x, mc_y, mv_x, mv_y):\n    r\"\"\"\n    Return the value of the goniopolarity condition.\n\n    Inputs\n    ----------\n    mc_x, mc_y, mv_x, mv_y: float\n        Effective masses $m_{c/v,\\alpha}$ with $\\alpha = x,y$, in unit of a typical carrier mass $m_0$ that is five times of the electron mass.\n\n    Outputs\n    ----------\n    have_goniopolarity: bool\n        True if the material exhibits goniopolarity, otherwise False.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    have_goniopolarity = ...\n    # ---------------------------------------------------------------\n\n    return have_goniopolarity",
+      "answer_code": "def answer(mc_x, mc_y, mv_x, mv_y):\n    r\"\"\"\n    Return the value of the goniopolarity condition.\n\n    Inputs\n    ----------\n    mc_x, mc_y, mv_x, mv_y: float\n        Effective masses $m_{c/v,\\alpha}$ with $\\alpha = x,y$, in unit of a typical carrier mass $m_0$ that is five times of the electron mass.\n\n    Outputs\n    ----------\n    have_goniopolarity: bool\n        True if the material exhibits goniopolarity, otherwise False.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    have_goniopolarity = ...\n    # ---------------------------------------------------------------\n\n    return have_goniopolarity",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nIn goniopolar materials, the thermal power can be n-type in one direction and p-type in another direction.",
+        "notebook_path": "data/public_test_challenges/Challenge_45.ipynb"
+      }
+    }
+  ]
+}

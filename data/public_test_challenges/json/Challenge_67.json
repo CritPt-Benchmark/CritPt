@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_67",
+  "source_notebook": "data/public_test_challenges/Challenge_67.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_67_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nWe study the fundamental limit of a quantum channel called the private channel. To be more specific, the Choi operator of the channel is given by the private state, with the input space given by the private system and shield system. Our channel is determined by the following Werner state: $$ q |\\psi_+\\rangle \\langle \\psi_+|^{a_0b_0} \\otimes \\frac{1}{d_{\\text{sym}}} P_{\\mathrm{sym}}^{A_0B_0} + (1-q) |\\psi_-\\rangle \\langle \\psi_-|^{a_0b_0} \\otimes \\frac{1}{d_{\\mathrm{asym}}} P_{\\mathrm{asym}}^{A_0B_0},\\ q\\in [0,1],$$\nwhere $a_0,b_0$ have dimension 2 and $A_0,B_0$ have dimension $d$. $P_{\\mathrm{sym}}$ is the projection onto the symmetric subspace.\n\n\n# Main problem:\n\nWhat is the quantum capacity of this channel when $q = \\frac{d+1}{2d}$?",
+      "code_template": "import sympy as sp\n\nd = sp.symbols('d', integer=True)\n\ndef answer(d):\n    r\"\"\"\n    Return the expression of the quantum capacity of the channel in Sympy format.\n\n    Inputs\n    ----------\n    d: sympy.Symbol, dimension paramter, $d$\n\n    Outputs\n    ----------\n    quantum_capacity: sympy.Expr, the quantum capacity of the channel.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    quantum_capacity = ... # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return quantum_capacity",
+      "answer_code": "import sympy as sp\n\nd = sp.symbols('d', integer=True)\n\ndef answer(d):\n    r\"\"\"\n    Return the expression of the quantum capacity of the channel in Sympy format.\n\n    Inputs\n    ----------\n    d: sympy.Symbol, dimension paramter, $d$\n\n    Outputs\n    ----------\n    quantum_capacity: sympy.Expr, the quantum capacity of the channel.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    quantum_capacity = ... # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return quantum_capacity",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nWe study the fundamental limit of a quantum channel called the private channel. To be more specific, the Choi operator of the channel is given by the private state, with the input space given by the private system and shield system. Our channel is determined by the following Werner state: $$ q |\\psi_+\\rangle \\langle \\psi_+|^{a_0b_0} \\otimes \\frac{1}{d_{\\text{sym}}} P_{\\mathrm{sym}}^{A_0B_0} + (1-q) |\\psi_-\\rangle \\langle \\psi_-|^{a_0b_0} \\otimes \\frac{1}{d_{\\mathrm{asym}}} P_{\\mathrm{asym}}^{A_0B_0},\\ q\\in [0,1],$$\nwhere $a_0,b_0$ have dimension 2 and $A_0,B_0$ have dimension $d$. $P_{\\mathrm{sym}}$ is the projection onto the symmetric subspace.\n",
+        "notebook_path": "data/public_test_challenges/Challenge_67.ipynb"
+      }
+    }
+  ]
+}

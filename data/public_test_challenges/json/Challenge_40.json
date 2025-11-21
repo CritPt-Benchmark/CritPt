@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_40",
+  "source_notebook": "data/public_test_challenges/Challenge_40.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_40_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n# Problem setup:\nEffective field theory is a powerful tool used to construct phenomenological models via symmetries. The method has recently been extended to dissipative systems via the Schwinger-Keldysh formalism. In this problem we will study the dissipative effective field theory associated to spontaneous symmetry breaking of multipolar $U(1)$ symmetries.\n\n\nConsider a $1d$ system with a conserved density $N = \\int \\rho$, conserved dipole moments $D = \\int x \\rho$, and a conserved quadrupole moment $Q = \\int x^2 \\rho$. Assume that these are the only conserved quantities in the system.\n\nSuppose that the quadrupole $Q$ generator is spontaneously broken, and the charge $N$ and dipole $D$ generators are unbroken.\n\n# Main problem:\n\nCompute the spectrum of hydrodynamic modes $\\omega(k)$.\n\nLet $\\chi$ be the charge susceptibility, $\\kappa$ be the quadrupole superfluid stiffness, and $\\sigma$ be the coefficient of the leading order dissipative term. You may assume all other EFT coefficients are zero. Express your answer in terms of $\\chi$, $\\kappa$, and $\\sigma$.",
+      "code_template": "import sympy as sp\n\nchi, kappa, sigma, k = sp.symbols('chi kappa sigma k', real=True)\n\ndef answer(chi, kappa, sigma, k):\n    r\"\"\"\n    Return the expression of hydrodynamic mode spectrum $\\omega(k)$ in Sympy format.\n\n    Inputs\n    ----------\n    chi: sympy.Symbol, charge susceptibility, $\\chi$\n    kappa: sympy.Symbol, quadrupole superfluid stiffness, $\\kappa$\n    sigma: sympy.Symbol, coefficient of the leading order dissipative term, $\\sigma$\n    k: sympy.Symbol, momentum, $k$\n\n    Outputs\n    ----------\n    omega: set[sympy.Expr], a set of hydrodynamic mode dispersion relation(s), $\\omega(k)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    omega = ...  # a set of SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return omega",
+      "answer_code": "import sympy as sp\n\nchi, kappa, sigma, k = sp.symbols('chi kappa sigma k', real=True)\n\ndef answer(chi, kappa, sigma, k):\n    r\"\"\"\n    Return the expression of hydrodynamic mode spectrum $\\omega(k)$ in Sympy format.\n\n    Inputs\n    ----------\n    chi: sympy.Symbol, charge susceptibility, $\\chi$\n    kappa: sympy.Symbol, quadrupole superfluid stiffness, $\\kappa$\n    sigma: sympy.Symbol, coefficient of the leading order dissipative term, $\\sigma$\n    k: sympy.Symbol, momentum, $k$\n\n    Outputs\n    ----------\n    omega: set[sympy.Expr], a set of hydrodynamic mode dispersion relation(s), $\\omega(k)$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    omega = ...  # a set of SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return omega",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n# Problem setup:\nEffective field theory is a powerful tool used to construct phenomenological models via symmetries. The method has recently been extended to dissipative systems via the Schwinger-Keldysh formalism. In this problem we will study the dissipative effective field theory associated to spontaneous symmetry breaking of multipolar $U(1)$ symmetries.\n\n\nConsider a $1d$ system with a conserved density $N = \\int \\rho$, conserved dipole moments $D = \\int x \\rho$, and a conserved quadrupole moment $Q = \\int x^2 \\rho$. Assume that these are the only conserved quantities in the system.\n\nSuppose that the quadrupole $Q$ generator is spontaneously broken, and the charge $N$ and dipole $D$ generators are unbroken.",
+        "notebook_path": "data/public_test_challenges/Challenge_40.ipynb"
+      }
+    }
+  ]
+}

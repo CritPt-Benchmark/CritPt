@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_54",
+  "source_notebook": "data/public_test_challenges/Challenge_54.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_54_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nA magic wavelength is a special wavelength of light at which the AC Stark shift is the same for two atomic states, typically involving an optical transition. Here we want to find the magic wavelengths for imaging ytterbium (Yb) atoms using the green-light transitions between its ground-state manifold and $^3P_1$ state.\n\n# Main problem:\n\nCalculate the magic wavelengths for imaging the ground state of Yb atoms using the transitions between the ground state and the excited state $^3P_1$ for two Yb isotopes, Yb-171 and Yb-174, within the wavelength range from 400 nm to 600 nm. For each magic wavelength, give the associated transition type (choose from $\\sigma$ and $\\pi$).",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the values of all magic wavelengths from 400 nm to 600 nm and associated transition types for Yb 171 and Yb 174.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    Yb_171: set[tuple[int,str]]\n            A set of `(magic_wavelength, transition_type)` tuples for Yb 171.\n            magic_wavelength is a rounded integer (nm) in [400, 600] and transition_type is either 'sigma' or 'pi'.\n    Yb_174: set[tuple[int,str]]\n            A set of `(magic wavelength, transition type)` tuples for Yb 174.\n            magic_wavelength is a rounded integer (nm) in [400, 600] and transition_type is either 'sigma' or 'pi'.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    Yb_171 = ...\n    Yb_174 = ...\n    # ---------------------------------------------------------------\n\n    return Yb_171, Yb_174",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the values of all magic wavelengths from 400 nm to 600 nm and associated transition types for Yb 171 and Yb 174.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    Yb_171: set[tuple[int,str]]\n            A set of `(magic_wavelength, transition_type)` tuples for Yb 171.\n            magic_wavelength is a rounded integer (nm) in [400, 600] and transition_type is either 'sigma' or 'pi'.\n    Yb_174: set[tuple[int,str]]\n            A set of `(magic wavelength, transition type)` tuples for Yb 174.\n            magic_wavelength is a rounded integer (nm) in [400, 600] and transition_type is either 'sigma' or 'pi'.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    Yb_171 = ...\n    Yb_174 = ...\n    # ---------------------------------------------------------------\n\n    return Yb_171, Yb_174",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nA magic wavelength is a special wavelength of light at which the AC Stark shift is the same for two atomic states, typically involving an optical transition. Here we want to find the magic wavelengths for imaging ytterbium (Yb) atoms using the green-light transitions between its ground-state manifold and $^3P_1$ state.",
+        "notebook_path": "data/public_test_challenges/Challenge_54.ipynb"
+      }
+    }
+  ]
+}

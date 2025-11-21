@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_69",
+  "source_notebook": "data/public_test_challenges/Challenge_69.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_69_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nSuppose the quantum amplitude damping channel acting on a qubit system is defined by\n\\begin{align*}\n    \\mathcal A_{\\gamma}\\begin{pmatrix}\n        \\rho_{00} & \\rho_{01} \\\\\n        \\rho_{10} & \\rho_{11}\n    \\end{pmatrix} = \\begin{pmatrix}\n        \\rho_{00}+ \\gamma \\rho_{11} & \\sqrt{1-\\gamma}\\rho_{01} \\\\\n        \\sqrt{1-\\gamma} \\rho_{10} & (1-\\gamma)\\rho_{11}\n    \\end{pmatrix}.\n\\end{align*}\nThe quantum relative entropy is defined by\n\\begin{equation*}\nD(\\rho||\\sigma)= \\begin{cases}\n \\mathrm{tr}\\Big(\\rho\\big(\\log(\\rho)-\\log(\\sigma)\\big)\\Big) &\\text{ if } \\text{supp}(\\rho)\\subseteq \\text{supp}(\\sigma), \\\\\n\\infty &\\text{ else}.\n\\end{cases}\n\\end{equation*}\n\n\n# Main problem:\n\nDenote\n\\begin{align*}\n    f(\\gamma):=\\sup_{\\rho \\neq \\sigma}\\frac{D(\\mathcal{A}_{\\gamma}(\\rho) \\|\\mathcal{A}_{\\gamma}(\\sigma))}{D(\\rho \\|\\sigma)},\\quad \\gamma \\in [0,1],\n\\end{align*}\nwhere the supremum is taken over all density operators $\\rho$ and $\\sigma$. Calculate $$f(\\frac{1}{8}) + f(\\frac{1}{4}) + f(\\frac{1}{2}).$$\n\n",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the value of $f(\\frac{1}{8}) + f(\\frac{1}{4}) + f(\\frac{1}{2})$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    sum: float\n        Value of $f(\\frac{1}{8}) + f(\\frac{1}{4}) + f(\\frac{1}{2})$,\n        where $f(\\gamma):=\\sup_{\\rho \\neq \\sigma}\\frac{D(\\mathcal{A}_{\\gamma}(\\rho) \\|\\mathcal{A}_{\\gamma}(\\sigma))}{D(\\rho \\|\\sigma)},\\quad \\gamma \\in [0,1]$.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    sum = ...\n    # ---------------------------------------------------------------\n\n    return sum",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the value of $f(\\frac{1}{8}) + f(\\frac{1}{4}) + f(\\frac{1}{2})$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    sum: float\n        Value of $f(\\frac{1}{8}) + f(\\frac{1}{4}) + f(\\frac{1}{2})$,\n        where $f(\\gamma):=\\sup_{\\rho \\neq \\sigma}\\frac{D(\\mathcal{A}_{\\gamma}(\\rho) \\|\\mathcal{A}_{\\gamma}(\\sigma))}{D(\\rho \\|\\sigma)},\\quad \\gamma \\in [0,1]$.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    sum = ...\n    # ---------------------------------------------------------------\n\n    return sum",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nSuppose the quantum amplitude damping channel acting on a qubit system is defined by\n\\begin{align*}\n    \\mathcal A_{\\gamma}\\begin{pmatrix}\n        \\rho_{00} & \\rho_{01} \\\\\n        \\rho_{10} & \\rho_{11}\n    \\end{pmatrix} = \\begin{pmatrix}\n        \\rho_{00}+ \\gamma \\rho_{11} & \\sqrt{1-\\gamma}\\rho_{01} \\\\\n        \\sqrt{1-\\gamma} \\rho_{10} & (1-\\gamma)\\rho_{11}\n    \\end{pmatrix}.\n\\end{align*}\nThe quantum relative entropy is defined by\n\\begin{equation*}\nD(\\rho||\\sigma)= \\begin{cases}\n \\mathrm{tr}\\Big(\\rho\\big(\\log(\\rho)-\\log(\\sigma)\\big)\\Big) &\\text{ if } \\text{supp}(\\rho)\\subseteq \\text{supp}(\\sigma), \\\\\n\\infty &\\text{ else}.\n\\end{cases}\n\\end{equation*}\n",
+        "notebook_path": "data/public_test_challenges/Challenge_69.ipynb"
+      }
+    }
+  ]
+}

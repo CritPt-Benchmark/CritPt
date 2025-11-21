@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_68",
+  "source_notebook": "data/public_test_challenges/Challenge_68.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_68_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nThe quantum $f$-divergence is defined by \\begin{align*}\n    D^{\\mathrm{std}}_f(\\rho \\|\\sigma) =  \\int_0^\\infty \\mathrm{tr}\\bigl[ (\\rho - \\sigma) \\frac{1}{L_\\rho + s R_\\sigma}(\\rho-\\sigma) \\bigr] d\\mu(s),\n\\end{align*}\nwhere $\\mu$ a positive measure on $(0,\\infty)$ such that $\\int_0^\\infty \\frac{1}{1+s} d\\mu(s) < \\infty$. We study the derivatives of the $f$-divergence. Let $\\rho_t = \\sigma + t(\\rho - \\sigma)$.\n\n# Main problem:\n\nCalculate $\\frac{d}{dt} D^{\\mathrm{std}}_f(\\rho_t \\|\\sigma)$ at $t = 0.5$. Please be as accurate as possible",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the value of $\\frac{d}{dt} D^{\\mathrm{std}}_f(\\rho_t \\|\\sigma)$ at $t = 0.5$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    first_derivative: float, the first derivative $\\frac{d}{dt} D^{\\mathrm{std}}_f(\\rho_t \\|\\sigma)$ at $t = 0.5$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    first_derivative = ...\n    # ---------------------------------------------------------------\n\n    return first_derivative",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the value of $\\frac{d}{dt} D^{\\mathrm{std}}_f(\\rho_t \\|\\sigma)$ at $t = 0.5$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    first_derivative: float, the first derivative $\\frac{d}{dt} D^{\\mathrm{std}}_f(\\rho_t \\|\\sigma)$ at $t = 0.5$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    first_derivative = ...\n    # ---------------------------------------------------------------\n\n    return first_derivative",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nThe quantum $f$-divergence is defined by \\begin{align*}\n    D^{\\mathrm{std}}_f(\\rho \\|\\sigma) =  \\int_0^\\infty \\mathrm{tr}\\bigl[ (\\rho - \\sigma) \\frac{1}{L_\\rho + s R_\\sigma}(\\rho-\\sigma) \\bigr] d\\mu(s),\n\\end{align*}\nwhere $\\mu$ a positive measure on $(0,\\infty)$ such that $\\int_0^\\infty \\frac{1}{1+s} d\\mu(s) < \\infty$. We study the derivatives of the $f$-divergence. Let $\\rho_t = \\sigma + t(\\rho - \\sigma)$.",
+        "notebook_path": "data/public_test_challenges/Challenge_68.ipynb"
+      }
+    }
+  ]
+}

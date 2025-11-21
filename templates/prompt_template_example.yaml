@@ -1,0 +1,9 @@
+# REQUIRED: provide a SYSTEM_PROMPT.
+# OPTIONAL: use jinja-style template and provide other keys.
+# - Only keys with prefix SYSTEM_PROMPT_ is recognized when rendering system prompt
+# - define specified values using prefix PROMPT_SPECS_
+# OPTIONAL: use IMPORT_FROM to import other yamls.
+
+SYSTEM_PROMPT: >
+  You are a helpful assistant.
+  {% if FLAG %} flag=true {% else %} flag=false {%endif%}

@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_55",
+  "source_notebook": "data/public_test_challenges/Challenge_55.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_55_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nThis problem addresses inelastic neutron scattering from a 1D harmonic oscillator. Because phonons in a crystal lattice can be modeled as harmonic oscillators, this setup effectively captures the essential physics of inelastic neutron scattering from phonons in a crystalline solid.\n\nWe consider a harmonic oscillator of mass $M$ with fundamental frequency $\\omega_0$.\n\nThe total cross section $\\sigma(E)$ for neutrons of mass $m_n$ and energy $E$ can be expressed as a sum over contributions from the $m$-th harmonic oscillator:\n$$\n\\sigma(E)=\\sum_{m=0}^{\\infty} \\sigma_m(E).\n$$\nFor convenience, assume the bound-atom cross section $\\sigma_b = 1$ barn, $M = 10 m_n = 10$ amu (atomic mass unit), and the phonon energy $\\hbar \\omega_0 = 10$ meV.\n\n\n\n# Main problem:\n\nCalculate $\\sigma_m(E)$ with $m=2$ in the limit of low temperature with a precision to three decimal places for the following cases:\n\nCase 1: Assume that $E = 1$ meV.\n\nCase 2: Assume that $E = 40$ meV.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the values of $\\sigma_m(E)$ with $m=2$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    sigma_1 : float, $\\sigma_m(E)$ with $m=2$ in the limit of low temperature, assuming $E = 1$ meV.\n    sigma_40: float, $\\sigma_m(E)$ with $m=2$ in the limit of low temperature, assuming $E = 40$ meV.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    sigma_1  = ... # three decimal precision\n    sigma_40 = ... # three decimal precision\n    # ---------------------------------------------------------------\n\n    return sigma_1, sigma_40",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the values of $\\sigma_m(E)$ with $m=2$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    sigma_1 : float, $\\sigma_m(E)$ with $m=2$ in the limit of low temperature, assuming $E = 1$ meV.\n    sigma_40: float, $\\sigma_m(E)$ with $m=2$ in the limit of low temperature, assuming $E = 40$ meV.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    sigma_1  = ... # three decimal precision\n    sigma_40 = ... # three decimal precision\n    # ---------------------------------------------------------------\n\n    return sigma_1, sigma_40",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nThis problem addresses inelastic neutron scattering from a 1D harmonic oscillator. Because phonons in a crystal lattice can be modeled as harmonic oscillators, this setup effectively captures the essential physics of inelastic neutron scattering from phonons in a crystalline solid.\n\nWe consider a harmonic oscillator of mass $M$ with fundamental frequency $\\omega_0$.\n\nThe total cross section $\\sigma(E)$ for neutrons of mass $m_n$ and energy $E$ can be expressed as a sum over contributions from the $m$-th harmonic oscillator:\n$$\n\\sigma(E)=\\sum_{m=0}^{\\infty} \\sigma_m(E).\n$$\nFor convenience, assume the bound-atom cross section $\\sigma_b = 1$ barn, $M = 10 m_n = 10$ amu (atomic mass unit), and the phonon energy $\\hbar \\omega_0 = 10$ meV.\n\n",
+        "notebook_path": "data/public_test_challenges/Challenge_55.ipynb"
+      }
+    }
+  ]
+}

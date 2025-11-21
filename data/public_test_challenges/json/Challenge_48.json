@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_48",
+  "source_notebook": "data/public_test_challenges/Challenge_48.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_48_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nLet $Z(n, \\eta)$ denote a replica partition function defined for positive integers $n$ by\n\\begin{equation}\nZ(n, \\eta) = \\sum_{\\vec{x} \\in \\mathbb{Z}^{n-1}} \\exp\\left( -\\eta \\pi\\, \\vec{x}^\\top K \\vec{x} \\right),\n\\end{equation}\nwhere $\\eta > 0$ is a real parameter, and the sum runs over all integer vectors $\\vec{x} \\in \\mathbb{Z}^{n-1}$. The kernel $K$ is an $(n-1) \\times (n-1)$ matrix with components\n\\begin{equation}\nK_{ij} = \\left(1 - \\frac{1}{n}\\right)\\delta_{ij} - \\frac{1}{n}(1 - \\delta_{ij}).\n\\end{equation}\nEquivalently, $K = I_{n-1} - \\frac{1}{n} \\mathbf{1}_{n-1}$, where $\\mathbf{1}_{n-1}$ denotes the matrix of all ones.\n\n# Main problem:\n\nEvaluate the analytic continuation\n\\begin{equation}\nF( \\eta ) =  \\left. \\frac{\\partial}{\\partial n} Z(n, \\eta) \\right|_{n=1} - \\left( \\frac{1}{2} - \\frac{1}{2} \\ln \\eta \\right)\n\\end{equation}\nat $\\eta = \\frac{10}{3} \\pi$, accurate to at least eight digits after the decimal point.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the expression of the analytic continuation $F(\\eta)$ in Sympy format\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    F_eta: float\n        Analytic continuation $F(\\eta)$ at $\\eta = \\frac{10}{3} \\pi$, accurate to at least 8 decimal places.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    F_eta = ...\n    # ---------------------------------------------------------------\n\n    return F_eta",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the expression of the analytic continuation $F(\\eta)$ in Sympy format\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    F_eta: float\n        Analytic continuation $F(\\eta)$ at $\\eta = \\frac{10}{3} \\pi$, accurate to at least 8 decimal places.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    F_eta = ...\n    # ---------------------------------------------------------------\n\n    return F_eta",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nLet $Z(n, \\eta)$ denote a replica partition function defined for positive integers $n$ by\n\\begin{equation}\nZ(n, \\eta) = \\sum_{\\vec{x} \\in \\mathbb{Z}^{n-1}} \\exp\\left( -\\eta \\pi\\, \\vec{x}^\\top K \\vec{x} \\right),\n\\end{equation}\nwhere $\\eta > 0$ is a real parameter, and the sum runs over all integer vectors $\\vec{x} \\in \\mathbb{Z}^{n-1}$. The kernel $K$ is an $(n-1) \\times (n-1)$ matrix with components\n\\begin{equation}\nK_{ij} = \\left(1 - \\frac{1}{n}\\right)\\delta_{ij} - \\frac{1}{n}(1 - \\delta_{ij}).\n\\end{equation}\nEquivalently, $K = I_{n-1} - \\frac{1}{n} \\mathbf{1}_{n-1}$, where $\\mathbf{1}_{n-1}$ denotes the matrix of all ones.",
+        "notebook_path": "data/public_test_challenges/Challenge_48.ipynb"
+      }
+    }
+  ]
+}

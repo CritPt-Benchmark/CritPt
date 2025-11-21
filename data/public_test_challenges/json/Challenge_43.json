@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_43",
+  "source_notebook": "data/public_test_challenges/Challenge_43.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_43_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nConsider a 4-fold rotationally symmetric 2D insulator on a square lattice with ten occupied Wannierizable bands. Two of them correspond to a pair of Wannier orbitals centered at the 2c position (i.e., edge center) in each unit cell. Four of them correspond to Wannier orbitals centered at the 1b position (i.e., plaquette center). And the others correspond to Wannier orbitals centered at the 1a position (i.e., lattice site).\n\n\n\n# Main problem:\nConsider a disclination with Frank angle $–\\pi/2$ (i.e., a 90° wedge removed).\nIf the translation-equivalence class is nontrivial, what fractional charge (in units of the electron charge e) is trapped to the disclination core?\nWhat if the translation-equivalence class is trivial?\n\nIf we consider one additional occupied band with Wannier orbitals at 1b position with angular momentum $l=+1/2$, what are the quantities above?\n\nExpress each anwser as a value in $[-1/2,1/2)$.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the values of the fractional charges trapped to the disclination core.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    charge_nontrivial_a: float, fractional charge for the nontrivial translation-equivalence class with Frank angle $–\\pi/2$.\n    charge_trivial_a: float, fractional charge for the trivial translation-equivalence class with Frank angle $–\\pi/2$.\n    charge_nontrivial_b: float, fractional charge for the nontrivial translation-equivalence class with one additional occupied bands.\n    charge_trivial_b: float, fractional charge for the trivial translation-equivalence class with one additional occupied bands.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    charge_nontrivial_a = ...\n    charge_trivial_a = ...\n    charge_nontrivial_b = ...\n    charge_trivial_b = ...\n    # ---------------------------------------------------------------\n\n    return charge_nontrivial_a, charge_trivial_a, charge_nontrivial_b, charge_trivial_b",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the values of the fractional charges trapped to the disclination core.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    charge_nontrivial_a: float, fractional charge for the nontrivial translation-equivalence class with Frank angle $–\\pi/2$.\n    charge_trivial_a: float, fractional charge for the trivial translation-equivalence class with Frank angle $–\\pi/2$.\n    charge_nontrivial_b: float, fractional charge for the nontrivial translation-equivalence class with one additional occupied bands.\n    charge_trivial_b: float, fractional charge for the trivial translation-equivalence class with one additional occupied bands.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    charge_nontrivial_a = ...\n    charge_trivial_a = ...\n    charge_nontrivial_b = ...\n    charge_trivial_b = ...\n    # ---------------------------------------------------------------\n\n    return charge_nontrivial_a, charge_trivial_a, charge_nontrivial_b, charge_trivial_b",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nConsider a 4-fold rotationally symmetric 2D insulator on a square lattice with ten occupied Wannierizable bands. Two of them correspond to a pair of Wannier orbitals centered at the 2c position (i.e., edge center) in each unit cell. Four of them correspond to Wannier orbitals centered at the 1b position (i.e., plaquette center). And the others correspond to Wannier orbitals centered at the 1a position (i.e., lattice site).\n\n",
+        "notebook_path": "data/public_test_challenges/Challenge_43.ipynb"
+      }
+    }
+  ]
+}

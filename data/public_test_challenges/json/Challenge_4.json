@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_4",
+  "source_notebook": "data/public_test_challenges/Challenge_4.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_4_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nHigh-harmonic generation (HHG) is a nonlinear optical process in which intense laser fields interact with gas-phase atoms or molecules to produce coherent extreme ultraviolet (EUV) radiation. In this setup, a sequence of time-delayed laser pulses are focused into a gas jet to investigate the role of structured light in controlling the HHG process.\n\n# Main problem:\n\nI create a driving field composed of three temporally identical laser pulses of 800 nm center wavelength, 50 fs FWHM pulse duration, with the peaks of the pulses at t = 0 fs, t = 30 fs, and t = 60 fs, respectively. The first pulse is left circularly polarized and carries an orbital angular momentum (OAM) of  $\\ell = -1$, the second pulse is right circularly polarized and has OAM $\\ell = 2$, and the third pulse is left circularly polarized and has OAM $\\ell = 1$. The pulses are focused, overlapped in space, into a gas jet, and used to drive high-harmonic generation to produce EUV light. Calculate the OAM of the 23rd harmonic order and give the associated helicity $\\sigma$ ($\\pm 1$).",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the OAM and helicity of the 23rd harmonic order.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    harmonic_23 : set[tuples[int, int]]\n        A set of allowed combinations of OAM and helicity for the 23rd harmonic order, ($\\ell$, $\\sigma$).\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    harmonic_23 = ...\n    # ---------------------------------------------------------------\n\n    return harmonic_23",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the OAM and helicity of the 23rd harmonic order.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    harmonic_23 : set[tuples[int, int]]\n        A set of allowed combinations of OAM and helicity for the 23rd harmonic order, ($\\ell$, $\\sigma$).\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    harmonic_23 = ...\n    # ---------------------------------------------------------------\n\n    return harmonic_23",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nHigh-harmonic generation (HHG) is a nonlinear optical process in which intense laser fields interact with gas-phase atoms or molecules to produce coherent extreme ultraviolet (EUV) radiation. In this setup, a sequence of time-delayed laser pulses are focused into a gas jet to investigate the role of structured light in controlling the HHG process.",
+        "notebook_path": "data/public_test_challenges/Challenge_4.ipynb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_49",
+  "source_notebook": "data/public_test_challenges/Challenge_49.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_49_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nIn a long-range dispersal model, a cluster of species can grow from a single seed. The cluster expands into space with long-range power-law interactions. In one dimension, the asymptotic size of the cluster,  denoted by $\\ell(t)$, satisfies a self-consistent equation:\n\\begin{equation}\n    \\frac{1}{\\ell^{\\mu}(t)} \\int_0^t \\ell(\\tau) \\ell(t - \\tau) d\\tau = K.\n\\end{equation}\nHere, $\\mu$ is the power-law index of the long-range interaction, and $K$ is a constant independent of time.\n\n# Main problem:\n\nConsider the specific scenario where $\\mu = 2$, and let us define $\\varphi = \\log_2 \\ell$ and $z = \\log_2 t$. Expand $\\varphi$ in terms of $z$  for large $t$ and retain terms up to constant order in $z$. That is, you should fix any $\\text{polylog}(z)$ corrections such as $\\log_2(z)$ and $\\log^2_2(z)$ if they are present; constant corrections can be ignored.",
+      "code_template": "import sympy as sp\n\nz, K = sp.symbols('z K')\n\ndef answer(z, K):\n    r\"\"\"\n    Return the expression of $\\varphi$ in Sympy format.\n\n    Inputs\n    ----------\n    z: sympy.Symbol, defined as $\\log_2 t$\n    K: sympy.Symbol, constant from the self-consistent equation\n            $$\\frac{1}{\\ell^{\\mu}(t)} \\int_0^t \\ell(\\tau) \\ell(t - \\tau) d\\tau = K$$\n\n    Outputs\n    ----------\n    varphi: sympy.Expr, expansion of $\\varphi$ in terms of $z$ for large $t$\n        and retain terms up to constant order in $z$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    varphi = ...  # SymPy expression in terms of z (and possibly K),\n                  # retaining z, log_2(z), log_2(z)**2 terms; omit constants\n    # ---------------------------------------------------------------\n\n    return varphi",
+      "answer_code": "import sympy as sp\n\nz, K = sp.symbols('z K')\n\ndef answer(z, K):\n    r\"\"\"\n    Return the expression of $\\varphi$ in Sympy format.\n\n    Inputs\n    ----------\n    z: sympy.Symbol, defined as $\\log_2 t$\n    K: sympy.Symbol, constant from the self-consistent equation\n            $$\\frac{1}{\\ell^{\\mu}(t)} \\int_0^t \\ell(\\tau) \\ell(t - \\tau) d\\tau = K$$\n\n    Outputs\n    ----------\n    varphi: sympy.Expr, expansion of $\\varphi$ in terms of $z$ for large $t$\n        and retain terms up to constant order in $z$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    varphi = ...  # SymPy expression in terms of z (and possibly K),\n                  # retaining z, log_2(z), log_2(z)**2 terms; omit constants\n    # ---------------------------------------------------------------\n\n    return varphi",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nIn a long-range dispersal model, a cluster of species can grow from a single seed. The cluster expands into space with long-range power-law interactions. In one dimension, the asymptotic size of the cluster,  denoted by $\\ell(t)$, satisfies a self-consistent equation:\n\\begin{equation}\n    \\frac{1}{\\ell^{\\mu}(t)} \\int_0^t \\ell(\\tau) \\ell(t - \\tau) d\\tau = K.\n\\end{equation}\nHere, $\\mu$ is the power-law index of the long-range interaction, and $K$ is a constant independent of time.",
+        "notebook_path": "data/public_test_challenges/Challenge_49.ipynb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_28",
+  "source_notebook": "data/public_test_challenges/Challenge_28.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_28_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "# Problem setup:\nConsider a four-dimensional hypercubic lattice with lattice spacing $a$ and nearest-neighbor hopping amplitude $t$. The system includes an on-site Hubbard interaction of strength $U$, and the chemical potential is near the bottom of the conduction band.\n\nThe Hubbard interaction will give a correction to the real part of the finite-frequency paramagnetic conductivity.\n\n# Main problem:\n\n\nAt zero temperature, to the second order in $U$, what's the leading power law dependence of the Fermi momentum $k_F$ of this correction along $y$ direction per unit volume in the zero frequency limit? At zero temperature, to the second order in $U$, what's the leading power law dependence of the Fermi momentum $k_F$ of the quasiparticle scattering rate and transport scattering rate on the Fermi surface in the zero frequency limit?",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the values of the exponents of the leading power law dependence on the Fermi momentum\n    of the correction along $y$ direction per unit volume, the quasiparticle scattering rate\n    and transport scattering rate on the Fermi surface in the zero frequency limit.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    exponent_correction: float, the exponent of the leading power law dependence on the Fermi momentum\n        of the correction along $y$ direction per unit volume in the zero frequency limit.\n    exponent_quasiparticle: float, the exponent of the leading power law dependence on the Fermi momentum\n        of the quasiparticle scattering rate on the Fermi surface in the zero frequency limit.\n    exponent_transport: float, the exponent of the leading power law dependence on the Fermi momentum\n        of the transport scattering rate on the Fermi surface in the zero frequency limit.\n    \"\"\"\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    exponent_correction = ...\n    exponent_quasiparticle = ...\n    exponent_transport = ...\n    # ---------------------------------------------------------------\n\n    return exponent_correction, exponent_quasiparticle, exponent_transport",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the values of the exponents of the leading power law dependence on the Fermi momentum\n    of the correction along $y$ direction per unit volume, the quasiparticle scattering rate\n    and transport scattering rate on the Fermi surface in the zero frequency limit.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    exponent_correction: float, the exponent of the leading power law dependence on the Fermi momentum\n        of the correction along $y$ direction per unit volume in the zero frequency limit.\n    exponent_quasiparticle: float, the exponent of the leading power law dependence on the Fermi momentum\n        of the quasiparticle scattering rate on the Fermi surface in the zero frequency limit.\n    exponent_transport: float, the exponent of the leading power law dependence on the Fermi momentum\n        of the transport scattering rate on the Fermi surface in the zero frequency limit.\n    \"\"\"\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    exponent_correction = ...\n    exponent_quasiparticle = ...\n    exponent_transport = ...\n    # ---------------------------------------------------------------\n\n    return exponent_correction, exponent_quasiparticle, exponent_transport",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "# Problem setup:\nConsider a four-dimensional hypercubic lattice with lattice spacing $a$ and nearest-neighbor hopping amplitude $t$. The system includes an on-site Hubbard interaction of strength $U$, and the chemical potential is near the bottom of the conduction band.\n\nThe Hubbard interaction will give a correction to the real part of the finite-frequency paramagnetic conductivity.",
+        "notebook_path": "data/public_test_challenges/Challenge_28.ipynb"
+      }
+    }
+  ]
+}

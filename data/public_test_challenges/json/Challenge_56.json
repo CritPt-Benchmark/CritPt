@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_56",
+  "source_notebook": "data/public_test_challenges/Challenge_56.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_56_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nConsider a scalar field $\\phi$ linearly coupled to the standard model electromagnetic field with coupling strength $\\Lambda_\\gamma^{-1}$. We can write the interaction term of the Lagrangian as $\\mathcal{L}_\\text{int}=\\frac{\\phi}{4 \\Lambda_\\gamma}F^{\\mu\\nu}F_{\\mu\\nu}$. Assuming the scalar field makes up all the dark matter, it may induce observable effects in laser interferometers. We consider signals of scalar field in the Cosmic Explorer, whose planned strain sensitivity is about $2\\times 10^{-25}\\, \\text{Hz}^{-1/2}$ in the frequency range of $50\\,\\text{Hz} \\leq f \\leq 500\\,\\text{Hz}$. The interferometer arm length of Cosmic Explorer is designed to be $40\\, \\text{km}$. We assume the Cosmic Explorer uses a similar beamsplitter as LIGO, with thickness $6\\,\\text{cm}$ and index of refraction $3.5$.\n\n# Main problem:\n\nIf there is an overdensity of dark matter at the device that is $178$ times the local dark matter density (take the local dark matter density to be $0.4\\,\\text{GeV}/\\text{cm}^3$ and velocity to be $230\\,\\text{km}/\\text{s}$), what is the smallest $\\Lambda_\\gamma^{-1}$ the Cosmic Explorer can probe at $200\\,\\text{Hz}$ with a signal-to-noise ratio of 1 and with an observation time of $1000\\,\\text{s}$ or $ 0.7\\,\\text{yrs}$, respectively? Keep at least three significant digits in the final result.",
+      "code_template": "def answer():\n    r\"\"\"\n    Return the values of the smallest $\\Lambda_\\gamma^{-1}$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    lambda_inv: list[float]\n        Smallest coupling strength $\\Lambda_\\gamma^{-1}$ the Cosmic Explorer can probe at 200 Hz\n        with an observation time of $\\{1000\\,\\text{s}, 0.7\\,\\text{yrs}\\}$ and a signal-to-noise of 1.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    lambda_inv = ...\n    # ---------------------------------------------------------------\n\n    return lambda_inv",
+      "answer_code": "def answer():\n    r\"\"\"\n    Return the values of the smallest $\\Lambda_\\gamma^{-1}$.\n\n    Inputs\n    ----------\n    None\n\n    Outputs\n    ----------\n    lambda_inv: list[float]\n        Smallest coupling strength $\\Lambda_\\gamma^{-1}$ the Cosmic Explorer can probe at 200 Hz\n        with an observation time of $\\{1000\\,\\text{s}, 0.7\\,\\text{yrs}\\}$ and a signal-to-noise of 1.\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULTS BELOW ------------------\n    lambda_inv = ...\n    # ---------------------------------------------------------------\n\n    return lambda_inv",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nConsider a scalar field $\\phi$ linearly coupled to the standard model electromagnetic field with coupling strength $\\Lambda_\\gamma^{-1}$. We can write the interaction term of the Lagrangian as $\\mathcal{L}_\\text{int}=\\frac{\\phi}{4 \\Lambda_\\gamma}F^{\\mu\\nu}F_{\\mu\\nu}$. Assuming the scalar field makes up all the dark matter, it may induce observable effects in laser interferometers. We consider signals of scalar field in the Cosmic Explorer, whose planned strain sensitivity is about $2\\times 10^{-25}\\, \\text{Hz}^{-1/2}$ in the frequency range of $50\\,\\text{Hz} \\leq f \\leq 500\\,\\text{Hz}$. The interferometer arm length of Cosmic Explorer is designed to be $40\\, \\text{km}$. We assume the Cosmic Explorer uses a similar beamsplitter as LIGO, with thickness $6\\,\\text{cm}$ and index of refraction $3.5$.",
+        "notebook_path": "data/public_test_challenges/Challenge_56.ipynb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_name": "Challenge_53",
+  "source_notebook": "data/public_test_challenges/Challenge_53.ipynb",
+  "problems": [
+    {
+      "problem_id": "Challenge_53_main",
+      "problem_type": "main",
+      "problem_index": null,
+      "problem_description": "\n\n# Problem setup:\nThe ambient metric is defined as follows:\n\\begin{equation}\nds^2 = 2\\rho dt^2 + 2t dt d\\rho + t^2 \\gamma_{ij}(x,\\rho)dx^{i}dx^{j}\\,,\n\\end{equation}\nwhere $\\gamma_{ij}(x,\\rho)$ can be expanded asymptotically in terms of $\\rho$ as\n\\begin{align}\n\\gamma_{ij}(x,\\rho)&= \\gamma^{(0)}_{ij}(x)+ \\gamma^{(1)}_{ij}(x)\\rho +\\gamma^{(2)}_{ij}(x)\\rho^2 + \\cdots\\,.\n\\end{align}\nGiven $\\gamma^{(0)}_{ij}$, the higher-order terms in the expansion can be solved order by order from the Ricci-flatness condition of the ambient metric. For $k\\geqslant 2$, each $\\gamma^{(k)}_{ij}(x)$ has a pole at $d=2k$.\n\nOn the other hand, the Riemann tensor of the ambient metric defines the $k$th extended obstruction tensor $\\Omega^{(k)}_{ij}$ in the following way:\n\\begin{equation}\n\\Omega^{(k)}_{ij}= R_{\\rho ij\\rho;\\underbrace{\\scriptstyle \\rho\\cdots \\rho}_{k-1}}|_{\\rho=0,t=1}.\n\\end{equation}\nThis tensor also has a pole at $d=2k+2$. The residue of $\\gamma^{(k)}_{ij}(x)$ is proportional to that of $\\Omega^{(k-1)}_{ij}$.\n\n# Main problem:\n\n Suppose $\\text{Res}_{d=2k}\\gamma^{(k)}_{ij}=A_k\\text{Res}_{d=2k}\\Omega^{(k-1)}_{ij}$. Show that for $k=2,3$, $\\gamma^{(k)}_{ij}-A_k\\Omega^{(k-1)}_{ij}$ is proportional to $P^{k}{}_{i} P_{kj}$ and $B_{k(i}P^k{}_{j)}$, respectively. Determine these two coefficients.",
+      "code_template": "import sympy as sp\n\nd = sp.symbols('d')\n\ndef answer(d):\n    r\"\"\"\n    Return the expressions of the coefficients in SymPy format.\n\n    Inputs\n    ----------\n    d: sympy.Symbol, variable, $d$\n\n    Output\n    ----------\n    coeff1: sympy.Expr, the coefficient in front of $P^{k}{}_{i} P_{kj}$\n    coeff2: sympy.Expr, the coefficient in front of $B_{k(i}P^k{}_{j)}$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULT BELOW ------------------\n    coeff1 = ...   # a SymPy expression of inputs\n    coeff2 = ...   # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return coeff1, coeff2",
+      "answer_code": "import sympy as sp\n\nd = sp.symbols('d')\n\ndef answer(d):\n    r\"\"\"\n    Return the expressions of the coefficients in SymPy format.\n\n    Inputs\n    ----------\n    d: sympy.Symbol, variable, $d$\n\n    Output\n    ----------\n    coeff1: sympy.Expr, the coefficient in front of $P^{k}{}_{i} P_{kj}$\n    coeff2: sympy.Expr, the coefficient in front of $B_{k(i}P^k{}_{j)}$\n    \"\"\"\n\n    # ------------------ FILL IN YOUR RESULT BELOW ------------------\n    coeff1 = ...   # a SymPy expression of inputs\n    coeff2 = ...   # a SymPy expression of inputs\n    # ---------------------------------------------------------------\n\n    return coeff1, coeff2",
+      "answer_only_code": "",
+      "testcases": null,
+      "metadata": {
+        "settings": {},
+        "tag": "",
+        "problem_setup": "\n\n# Problem setup:\nThe ambient metric is defined as follows:\n\\begin{equation}\nds^2 = 2\\rho dt^2 + 2t dt d\\rho + t^2 \\gamma_{ij}(x,\\rho)dx^{i}dx^{j}\\,,\n\\end{equation}\nwhere $\\gamma_{ij}(x,\\rho)$ can be expanded asymptotically in terms of $\\rho$ as\n\\begin{align}\n\\gamma_{ij}(x,\\rho)&= \\gamma^{(0)}_{ij}(x)+ \\gamma^{(1)}_{ij}(x)\\rho +\\gamma^{(2)}_{ij}(x)\\rho^2 + \\cdots\\,.\n\\end{align}\nGiven $\\gamma^{(0)}_{ij}$, the higher-order terms in the expansion can be solved order by order from the Ricci-flatness condition of the ambient metric. For $k\\geqslant 2$, each $\\gamma^{(k)}_{ij}(x)$ has a pole at $d=2k$.\n\nOn the other hand, the Riemann tensor of the ambient metric defines the $k$th extended obstruction tensor $\\Omega^{(k)}_{ij}$ in the following way:\n\\begin{equation}\n\\Omega^{(k)}_{ij}= R_{\\rho ij\\rho;\\underbrace{\\scriptstyle \\rho\\cdots \\rho}_{k-1}}|_{\\rho=0,t=1}.\n\\end{equation}\nThis tensor also has a pole at $d=2k+2$. The residue of $\\gamma^{(k)}_{ij}(x)$ is proportional to that of $\\Omega^{(k-1)}_{ij}$.",
+        "notebook_path": "data/public_test_challenges/Challenge_53.ipynb"
+      }
+    }
+  ]
+}

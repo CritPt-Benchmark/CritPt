@@ -1,0 +1,13 @@
+
+        <article class="message {{ role_class(role) }}">
+            <div class="meta">
+                <span class="badge">{{ role_html }}</span>
+                <span class="idx">#{{ i }}</span>
+            </div>
+            {{ REPORT_TEMPLATE_REASONING }}
+            {% for content_html in content_htmls %}
+                <div class="content markdown-body">
+                    {{ content_html }}
+                </div>
+            {% endfor %}
+        </article>

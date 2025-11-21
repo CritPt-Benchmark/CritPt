@@ -1,0 +1,21 @@
+# Cortex Benchmark - Private Requirements
+# For evaluation server
+
+# Core
+python>=3.9
+inspect-ai>=0.3.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Math and scientific computing
+sympy>=1.12
+numpy>=1.24.0
+
+# Web server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+httpx>=0.25.0
+
+# Optional: LLM clients (for testing)
+# openai>=1.0.0
+# anthropic>=0.8.0
