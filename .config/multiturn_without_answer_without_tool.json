@@ -1,0 +1,13 @@
+{
+    "reader_paths": [
+    "data/example_challenges/json/quantum_error_correction_main.json"
+    ],
+    "output_dir_prefix": null,
+    "use_golden_for_prev_steps": false,
+    "parsing": false,
+    "multiturn_with_answer": false,
+    "skip_if_exists": true,
+    "use_python": false,
+    "use_web_search": false,
+    "debug_num_samples": null
+  }
