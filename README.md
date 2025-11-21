@@ -11,7 +11,7 @@ It currently includes 71 challenges and 190 checkpoints, crafted by a team of 50
 **Nov 21, 2025**: CritPt made its official debut on [Artificial Analysis](https://artificialanalysis.ai/evaluations/critpt)! 
 
 **Nov 21, 2025**: The evaluation pipeline and challenge dataset are now publicly available! To evaluate your own models on CritPt, please follow the instructions provided on this page. 
-                  An example challenge can be found [here](https://critpt.com/example.html). See 70 test challenges in [this folder]([git data folder link](https://github.com/CritPt-Benchmark/CritPt/tree/main/data)) or on [Hugging Face](https://huggingface.co/datasets/CritPt-Benchmark/CritPt).
+                  An example challenge can be found [here](https://critpt.com/example.html). See 70 test challenges in [this folder]([https://github.com/CritPt-Benchmark/CritPt/tree/main/data]) or on [Hugging Face](https://huggingface.co/datasets/CritPt-Benchmark/CritPt).
 
 ## Leaderboard
 | Model                    | Challenge Accuracy¹ |
