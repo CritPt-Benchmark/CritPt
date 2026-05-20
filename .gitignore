@@ -1,0 +1,43 @@
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Generated outputs
+results/
+test_dir/
+visualization/
+src/logs/
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual envs / package managers
+.venv/
+venv/
+env/
+.python-version
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+*.DS_Store
+Thumbs.db
