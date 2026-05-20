@@ -58,6 +58,10 @@ TOGETHER_API_KEY=
 ## 1. Generation of model responses
 To generate responses using an API model, run the following command:
 ```
+cd src
+```
+
+```
 python -m critpt generate generate model=google/gemini-2.5-flash task_config=.config/multiturn_without_answer_without_tool.json
 ```
 This command will launch the generation process with the specified model and task configuration.
@@ -109,6 +113,71 @@ To initiate the grading process, run the following command:
 ```
 python ../evaluate_all_results.py
 ```
+
+### Evaluation API Reference
+
+The grading server is exposed as a public HTTP API. Full reference: [artificialanalysis.ai/api-reference#tag/CritPt-Evaluation](https://artificialanalysis.ai/api-reference#tag/CritPt-Evaluation).
+
+**Endpoint**
+
+```
+POST https://artificialanalysis.ai/api/v2/critpt/evaluate
+Content-Type: application/json
+x-api-key: <YOUR_API_KEY>
+```
+
+Obtain an API key by creating an account on the Artificial Analysis Insights Platform.
+
+**Request body**
+
+```jsonc
+{
+  "submissions": [
+    {
+      "problem_id":         "string",   // required — unique CritPt problem ID
+      "generated_code":     "string",   // required — model-generated code
+      "model":              "string",   // required — model name/identifier
+      "generation_config":  { ... },    // required — config used to generate (free-form object)
+      "messages":           [ ... ]     // optional — conversation messages for context
+    }
+    // ... one entry per problem; must cover ALL public-set problems
+  ],
+  "batch_metadata": { ... }             // required — free-form metadata object
+}
+```
+
+**Response (200)**
+
+```jsonc
+{
+  "accuracy":             0.0,   // average accuracy across submissions (0–1)
+  "timeout_rate":         0.0,   // share of gradings that timed out
+  "server_timeout_count": 0,     // count of upstream grading timeouts
+  "judge_error_count":    0      // count of gradings that failed due to a judge error
+}
+```
+
+**Rate limits**
+
+- 10 requests per 24-hour window per account.
+- Response headers: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset`.
+- On `429`, the body includes `error`, `limit`, `remaining`, `reset`, `retryAfter`; the `Retry-After` header gives seconds to wait.
+
+**Error codes**
+
+| Code | Meaning                                       |
+| ---- | --------------------------------------------- |
+| 400  | Invalid request body                          |
+| 401  | Invalid or missing API key                    |
+| 429  | Rate limit exceeded                           |
+| 502  | Invalid response from the evaluation system   |
+| 504  | Evaluation timeout                            |
+
+**Notes**
+
+- Requests can take substantial time to complete — the server processes the full batch synchronously.
+- All problems in the public set must be included in a single request; partial batches are rejected.
+- Attribution to the CritPt project is required when publishing results obtained via this API.
 
 # Contact
 For inquiries or collbarations, please contact minhui.zhu@anl.gov, mtian8@illinois.edu.
