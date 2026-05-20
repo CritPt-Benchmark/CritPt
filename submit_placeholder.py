@@ -86,9 +86,11 @@ def main() -> None:
         print(r.text)
         sys.exit(1)
 
-    out_path = f"eval_result_{MODEL}_{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.json"
-    with open(out_path, "w") as f:
-        json.dump(body, f, indent=2)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    out_dir = Path("results/eval_responses")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / f"{MODEL}_{ts}.json"
+    out_path.write_text(json.dumps(body, indent=2))
     print(f"Saved response to {out_path}")
 
     print("\nResponse body:")
