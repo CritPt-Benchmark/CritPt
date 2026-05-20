@@ -10,6 +10,7 @@ visualization/
 src/logs/
 *.log
 logs/
+alt_soln.py
 
 # Python
 __pycache__/

@@ -40,10 +40,18 @@ def _placeholder_for(i: int) -> str:
     return f"```python\n{template}\n```"
 
 
-# problem_id -> generated_code. Built from per-challenge templates.
 ANSWERS: dict[str, str] = {
     f"Challenge_{i}_main": _placeholder_for(i) for i in range(1, 71)
 }
+try:
+    from alt_soln import ALT_ANSWERS
+except ImportError:
+    ALT_ANSWERS = {}
+unknown = sorted(set(ALT_ANSWERS) - set(ANSWERS))
+if unknown:
+    sys.exit(f"alt_soln.ALT_ANSWERS has unknown problem_ids: {unknown}")
+ANSWERS.update(ALT_ANSWERS)
+print(f"Loaded {len(ALT_ANSWERS)} answers from alt_soln.py ")
 
 
 def main() -> None:
